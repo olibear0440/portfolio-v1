@@ -1,6 +1,8 @@
 <template>
   <div class="home">
     <BlocName />
+    <BlocAboutMe />
+    <BlocReservia />
     
   </div>
 </template>
@@ -9,6 +11,8 @@
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue'
 import BlocName from '@/components/bloc-name.vue'
+import BlocAboutMe from '@/components/bloc-aboutMe.vue'
+import BlocReservia from '@/components/bloc-reservia.vue'
 
 export default {
   name: 'HomeView',
@@ -17,8 +21,22 @@ export default {
   }
   */
  components: {
-    BlocName
+    BlocName,
+    BlocAboutMe,
+    BlocReservia
   }
   
 }
 </script>
+<style scoped>
+
+.home{
+  max-width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+@media screen and (min-width: 375px) and (max-width: 720px){
+  
+}
+
+</style>

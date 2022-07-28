@@ -37,27 +37,40 @@ export default {
   src: url(../assets/font/MrDafoe-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: Ibarra;
-  src: url(../assets/font/IbarraRealNova-Regular.ttf) format("truetype");
+  font-family: "Roboto";
+  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
 }
 .nameBloc {
-  font-family: Dafoe;
-  font-size: 150px;
+  font-family: "Dafoe";
+  font-size: 110px;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .myName {
-  margin: 0;
+  margin-bottom: 20px;
   padding-left: 70px;
   padding-right: 70px;
+  color: black;
+  animation: slideUpName 1.5s ease-in-out forwards;
+  width: 100%;
 }
+@keyframes slideUpName {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .jobBloc {
-  font-family: Ibarra;
-  font-size: 80px;
+  font-family: "Roboto";
   color: black;
   width: 100%;
   display: flex;
@@ -67,19 +80,32 @@ export default {
   margin-bottom: 50px;
 }
 .myJob {
+  width: 100%;
   padding-left: 70px;
   padding-right: 70px;
   margin: 0;
+  font-size: 50px;
+  color: #3c4043;
+  transition: color 0.5s;
+  animation: slideUpJob 1s 1s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes slideUpJob {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.myJob:hover{
+  color: blue;
 }
 
+
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .nameBloc {
-    margin-top: 50px;
-    font-size: 80px;
-  }
-  .myJob {
-    font-size: 40px;
-    margin-top: 80px;
-  }
 }
 </style>

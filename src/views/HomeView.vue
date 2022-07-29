@@ -3,7 +3,9 @@
     <BlocName />
     <BlocAboutMe />
     <BlocReservia />
+    <BlocGroupomania />
     <BlocOhMyFood />
+    <BlocOrinoco />
     
   </div>
 </template>
@@ -14,7 +16,9 @@
 import BlocName from '@/components/bloc-name.vue'
 import BlocAboutMe from '@/components/bloc-aboutMe.vue'
 import BlocReservia from '@/components/bloc-reservia.vue'
+import BlocGroupomania from '@/components/bloc-groupomania.vue'
 import BlocOhMyFood from '@/components/bloc-ohMyFood.vue'
+import BlocOrinoco from '@/components/bloc-orinoco.vue'
 
 export default {
   name: 'HomeView',
@@ -26,7 +30,9 @@ export default {
     BlocName,
     BlocAboutMe,
     BlocReservia,
-    BlocOhMyFood
+    BlocGroupomania,
+    BlocOhMyFood,
+    BlocOrinoco
   }
   
 }

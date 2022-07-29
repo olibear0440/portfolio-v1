@@ -25,7 +25,7 @@ export default {
     return {
       sectionTitre: "EXPERIENCES",
       techno: "Front-end - html css",
-      pitch: "Réservez vos vacances ! Trouvez hébergements et activités dans la ville de votre choix."
+      pitch: "Site de réservation. Trouvez des hébergements et des activités dans la ville de votre choix."
     };
   },
 };
@@ -42,9 +42,9 @@ export default {
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
   padding-bottom: 50px;
 }
 .experienceTitleBloc {
@@ -113,7 +113,7 @@ span{
   height: 590px;
   border: 3px solid #3c4043;
   border-radius: 20px;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .imgThree{

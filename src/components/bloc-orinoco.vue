@@ -109,16 +109,17 @@ span{
   height: 590px;
   border: 3px solid #3c4043;
   border-radius: 20px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .imgThree{
   /*margin-top: 107px;*/
   margin-top: 70px;
-  width: 600px;
+  margin-right: 80px;
+  width: 550px;
   border: 3px solid #3c4043;
   border-radius: 20px;
-  height: auto;
+  height: 600px;
 }
 
 

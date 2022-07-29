@@ -1,17 +1,15 @@
 <template>
-  <div class="thirdBloc">
-    <div class="experienceTitleBloc">
-      <p class="experienceTitle">{{ sectionTitre }}</p>
-    </div>
+  <div class="fourthBloc">
+    
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <img class="imgOne" src="../assets/img/Reservia.svg" alt="logo reservia" />
+        <img class="imgOne" src="../assets/img/ohmyfood@2x.svg" alt="logo ohMyFood" />
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img class="imgTwo" src="../assets/img/resrerviaDesk.png" alt="photo reservia desktop" />
+        <img class="imgTwo" src="../assets/img/ohmyfood1mob.png" alt="photo ohMyFood mobile" />
       </div>
       <div class="projetBlocOne">
-        <img class="imgThree" src="../assets/img/reservia_mob.jpg" alt="photo reservia mobile" />
+        <img class="imgThree" src="../assets/img/ohmyfood2mob.png" alt="photo ohMyFood mobile" />
       </div>
       
     </div>
@@ -20,12 +18,11 @@
 
 <script>
 export default {
-  name: "BlocReservia",
+  name: "BlocOhMyFood",
   data: () => {
     return {
-      sectionTitre: "EXPERIENCES",
-      techno: "Front-end - html css",
-      pitch: "Réservez vos vacances ! Trouvez hébergements et activités dans la ville de votre choix."
+      techno: "Front-end - html css - 100% mobile",
+      pitch: "Finis le temps d'attente, trouvez votre restaurant gastronomique, composez votre menu et réservez !"
     };
   },
 };
@@ -36,7 +33,7 @@ export default {
   font-family: "Roboto";
   src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
 }
-.thirdBloc {
+.fourthBloc {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,8 +41,8 @@ export default {
   background-color: white;
   height: 100vh;
   width: 100%;
+  padding: 20px 0px 20px 0px;
   margin-bottom: 250px;
-  padding-bottom: 50px;
 }
 .experienceTitleBloc {
   display: flex;
@@ -71,6 +68,7 @@ export default {
   display: flex;
   width: 100%;
   height: auto;
+  
 }
 .projetBlocTxt {
   display: flex;
@@ -81,7 +79,7 @@ export default {
   height: 600px;
 }
 .imgOne{
-  width: 250px;
+  width: 300px;
   padding: 0px 20px;
 }
 .projetTechno{
@@ -89,7 +87,7 @@ export default {
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
-  margin: 10px 0;
+  margin: 20px 0px 10px 0px;
   padding: 10px 20px;
 }
 .projetPitch{
@@ -105,26 +103,25 @@ span{
 }
 .projetBlocOne{
   width: 50%;
-
-}
-.imgTwo{
-  /*width: 100%;*/
-  width: auto;
-  height: 590px;
-  border: 3px solid #3c4043;
-  border-radius: 20px;
-  margin-left: 20px;
+  padding-top: 22px;
 }
 
 .imgThree{
-  /*margin-top: 107px;*/
-  margin-top: 50px;
+  /*margin-top: 80px;*/
+  
   width: 400px;
   border: 3px solid #3c4043;
   border-radius: 20px;
   height: auto;
-}
 
+}
+.imgTwo{
+  width: auto;
+  height: auto;
+  border: 3px solid #3c4043;
+  border-radius: 20px;
+  margin-left: 200px;
+}
 
 
 @media screen and (min-width: 375px) and (max-width: 768px) {

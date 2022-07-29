@@ -3,6 +3,7 @@
     <BlocName />
     <BlocAboutMe />
     <BlocReservia />
+    <BlocOhMyFood />
     
   </div>
 </template>
@@ -13,6 +14,7 @@
 import BlocName from '@/components/bloc-name.vue'
 import BlocAboutMe from '@/components/bloc-aboutMe.vue'
 import BlocReservia from '@/components/bloc-reservia.vue'
+import BlocOhMyFood from '@/components/bloc-ohMyFood.vue'
 
 export default {
   name: 'HomeView',
@@ -23,7 +25,8 @@ export default {
  components: {
     BlocName,
     BlocAboutMe,
-    BlocReservia
+    BlocReservia,
+    BlocOhMyFood
   }
   
 }

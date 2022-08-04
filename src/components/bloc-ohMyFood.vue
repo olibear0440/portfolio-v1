@@ -38,31 +38,12 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: black;
   height: auto;
   width: 100%;
   padding: 20px 0px 20px 0px;
   margin-bottom: 250px;
   margin-top: 200px;
-}
-.experienceTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-.experienceTitle {
-  font-size: 100px;
-  font-weight: bold;
-  color: rgb(238, 238, 238);
-  margin-top: 0;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: auto;
-  font-family: "Roboto";
 }
 
 .projetBloc {
@@ -84,7 +65,7 @@ export default {
   padding: 0px 20px;
 }
 .projetTechno{
-  color: #3c4043;
+  color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -92,7 +73,7 @@ export default {
   padding: 10px 20px;
 }
 .projetPitch{
-  color: #3c4043;
+  color: #dddddd;
   font-family: "Roboto";
   font-size: 25px;
   padding: 5px 20px;
@@ -110,14 +91,14 @@ span{
 .imgThree{
   /*margin-top: 80px;*/
   width: 400px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   height: auto;
 }
 .imgTwo{
   width: auto;
   height: auto;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   margin-left: 200px;
 }

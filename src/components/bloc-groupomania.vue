@@ -21,7 +21,7 @@ export default {
   data: () => {
     return {
       techno: "Full Stack - Sql node VueJs",
-      pitch: "Communiquez plus facilement chez Groupomania avec ce réseaux social d'entreprise."
+      pitch: "Communiquez plus facilement chez Groupomania avec le réseaux social d'entreprise."
     };
   },
 };
@@ -37,30 +37,11 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: black;
   height: auto;
   width: 100%;
   margin-bottom: 250px;
   padding-bottom: 50px;
-}
-.experienceTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-.experienceTitle {
-  font-size: 100px;
-  font-weight: bold;
-  color: rgb(238, 238, 238);
-  margin-top: 0;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: auto;
-  font-family: "Roboto";
 }
 
 .projetBloc {
@@ -81,7 +62,7 @@ export default {
   margin-bottom: 5px;
 }
 .projetTechno{
-  color: #3c4043;
+  color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -89,7 +70,7 @@ export default {
   padding: 10px 20px;
 }
 .projetPitch{
-  color: #3c4043;
+  color: #dddddd;
   font-family: "Roboto";
   font-size: 25px;
   padding: 5px 20px;
@@ -107,7 +88,7 @@ span{
   /*width: 100%;*/
   width: auto;
   height: 590px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   margin-left: 60px;
 }
@@ -116,7 +97,7 @@ span{
   /*margin-top: 107px;*/
   margin-top: 50px;
   width: 400px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   height: auto;
 }

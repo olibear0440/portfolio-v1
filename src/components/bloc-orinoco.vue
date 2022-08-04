@@ -10,7 +10,6 @@
       <div class="projetBlocOne">
         <img class="imgThree" src="../assets/img/orinoco1.png" alt="photo orinoco desktop" />
       </div>
-      
     </div>
   </div>
 </template>
@@ -21,7 +20,7 @@ export default {
   data: () => {
     return {
       techno: "Front-end - html css javascript",
-      pitch: "Achetez votre Teddy bear sur ce nouveau site de e-commerce en ligne !"
+      pitch: "Site e-commerce spécialisé dans les ours en peluche."
     };
   },
 };
@@ -37,31 +36,13 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: black;
   height: auto;
   width: 100%;
   margin-bottom: 250px;
   padding-bottom: 50px;
 }
-.experienceTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-.experienceTitle {
-  font-size: 100px;
-  font-weight: bold;
-  color: rgb(238, 238, 238);
-  margin-top: 0;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: auto;
-  font-family: "Roboto";
-}
+
 
 .projetBloc {
   display: flex;
@@ -81,7 +62,7 @@ export default {
   padding: 0px 20px;
 }
 .projetTechno{
-  color: #3c4043;
+  color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -89,7 +70,7 @@ export default {
   padding: 10px 20px;
 }
 .projetPitch{
-  color: #3c4043;
+  color: #dddddd;
   font-family: "Roboto";
   font-size: 25px;
   padding: 5px 20px;
@@ -107,7 +88,7 @@ span{
   /*width: 100%;*/
   width: auto;
   height: 590px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   margin-left: 40px;
 }
@@ -117,7 +98,7 @@ span{
   margin-top: 70px;
   margin-right: 80px;
   width: 550px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   height: 600px;
 }

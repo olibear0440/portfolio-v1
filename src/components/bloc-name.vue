@@ -28,7 +28,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: black;
   height: 100vh;
   width: 100%;
 }
@@ -37,8 +37,8 @@ export default {
   src: url(../assets/font/MrDafoe-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
+  font-family: "RobotoLight";
+  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
 .nameBloc {
   font-family: "Dafoe";
@@ -52,9 +52,7 @@ export default {
 }
 .myName {
   margin-bottom: 20px;
-  padding-left: 70px;
-  padding-right: 70px;
-  color: black;
+  color: #dddddd;
   animation: slideUpName 1.5s ease-in-out forwards;
   width: 100%;
 }
@@ -70,8 +68,7 @@ export default {
 }
 
 .jobBloc {
-  font-family: "Roboto";
-  color: black;
+  font-family: "RobotoLight";
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -81,12 +78,9 @@ export default {
 }
 .myJob {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
   margin: 0;
   font-size: 50px;
-  color: #3c4043;
-  transition: color 0.5s;
+  color: #bbbbbb;
   animation: slideUpJob 1s 1s ease-in-out forwards;
   opacity: 0;
 }
@@ -100,12 +94,21 @@ export default {
     opacity: 1;
   }
 }
-.myJob:hover{
-  color: blue;
-}
-
-
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .nameBloc {
+    margin-top: 150px;
+  }
+  .myName {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    animation: none;
+  }
+  .myJob {
+    font-size: 30px;
+    animation: none;
+    opacity: 1;
+  }
 }
 </style>

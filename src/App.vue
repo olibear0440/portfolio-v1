@@ -1,7 +1,6 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    
   </nav>
   <router-view/>
 </template>
@@ -9,7 +8,7 @@
 <style>
 
 body{
-  background-color: white;
+  background-color: black;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,19 +16,13 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: auto;
+  background-color: black;
 
 }
 
 nav {
-  padding: 30px;
+  background-color: black;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

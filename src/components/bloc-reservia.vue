@@ -23,7 +23,7 @@ export default {
   name: "BlocReservia",
   data: () => {
     return {
-      sectionTitre: "EXPERIENCES",
+      sectionTitre: "EXPERIENCE",
       techno: "Front-end - html css",
       pitch: "Site de réservation. Trouvez des hébergements et des activités dans la ville de votre choix."
     };
@@ -41,7 +41,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: black;
   height: auto;
   width: 100%;
   margin-bottom: 150px;
@@ -57,7 +57,7 @@ export default {
 .experienceTitle {
   font-size: 100px;
   font-weight: bold;
-  color: rgb(238, 238, 238);
+  color: #3c4043;
   margin-top: 0;
   margin-left: 25px;
   margin-bottom: 40px;
@@ -85,7 +85,7 @@ export default {
   padding: 0px 20px;
 }
 .projetTechno{
-  color: #3c4043;
+  color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -93,7 +93,7 @@ export default {
   padding: 10px 20px;
 }
 .projetPitch{
-  color: #3c4043;
+  color: #dddddd;
   font-family: "Roboto";
   font-size: 25px;
   padding: 5px 20px;
@@ -111,7 +111,7 @@ span{
   /*width: 100%;*/
   width: auto;
   height: 590px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   margin-left: 60px;
 }
@@ -120,7 +120,7 @@ span{
   /*margin-top: 107px;*/
   margin-top: 50px;
   width: 400px;
-  border: 3px solid #3c4043;
+  border: 1px solid #dddddd;
   border-radius: 20px;
   height: auto;
 }

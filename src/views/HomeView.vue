@@ -1,11 +1,13 @@
 <template>
   <div class="home">
     <BlocName />
-    <BlocAboutMe />
+    
     <BlocReservia />
     <BlocGroupomania />
     <BlocOhMyFood />
     <BlocOrinoco />
+    <BlocExpertise />
+    <BlocAboutMe />
     
   </div>
 </template>
@@ -14,11 +16,13 @@
 // @ is an alias to /src
 //import HelloWorld from '@/components/HelloWorld.vue'
 import BlocName from '@/components/bloc-name.vue'
-import BlocAboutMe from '@/components/bloc-aboutMe.vue'
+
 import BlocReservia from '@/components/bloc-reservia.vue'
 import BlocGroupomania from '@/components/bloc-groupomania.vue'
 import BlocOhMyFood from '@/components/bloc-ohMyFood.vue'
 import BlocOrinoco from '@/components/bloc-orinoco.vue'
+import BlocExpertise from '@/components/bloc-expertise.vue'
+import BlocAboutMe from '@/components/bloc-aboutMe.vue'
 
 export default {
   name: 'HomeView',
@@ -28,11 +32,12 @@ export default {
   */
  components: {
     BlocName,
-    BlocAboutMe,
     BlocReservia,
     BlocGroupomania,
     BlocOhMyFood,
-    BlocOrinoco
+    BlocOrinoco,
+    BlocExpertise,
+    BlocAboutMe
   }
   
 }

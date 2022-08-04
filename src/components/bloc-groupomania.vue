@@ -32,6 +32,10 @@ export default {
   font-family: "Roboto";
   src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "RobotoLight";
+  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
+}
 .sixthdBloc {
   display: flex;
   flex-direction: column;
@@ -71,7 +75,7 @@ export default {
 }
 .projetPitch{
   color: #dddddd;
-  font-family: "Roboto";
+  font-family: "RobotoLight";
   font-size: 25px;
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;

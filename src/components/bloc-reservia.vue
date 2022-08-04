@@ -5,27 +5,33 @@
     </div>
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <img class="imgOne" src="../assets/img/Reservia.svg" alt="logo reservia" />
+        <img class="imgOne" :src="logo" alt="logo site reservia" />
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img class="imgTwo" src="../assets/img/resrerviaDesk.png" alt="photo reservia desktop" />
+        <img class="imgTwo" :src="imgTw" alt="photo reservia desktop" />
       </div>
       <div class="projetBlocOne">
-        <img class="imgThree" src="../assets/img/reservia_mob.jpg" alt="photo reservia mobile" />
+        <img class="imgThree" :src="imgTh" alt="photo reservia mobile" />
       </div>
-      
     </div>
   </div>
 </template>
 
 <script>
+import reserviaLogo from "../assets/img/Reservia.svg";
+import reserviaDesk from "../assets/img/reserviaDesk.png";
+import reserviaMob from "../assets/img/reservia_mob.jpg";
 export default {
   name: "BlocReservia",
   data: () => {
     return {
+      logo: reserviaLogo,
+      imgTw: reserviaDesk,
+      imgTh: reserviaMob,
       sectionTitre: "EXPERIENCE",
       techno: "Front-end - html css",
-      pitch: "Site de réservation. Trouvez des hébergements et des activités dans la ville de votre choix."
+      pitch:
+        "Site de réservation. Trouvez des hébergements et des activités dans la ville de votre choix.",
     };
   },
 };
@@ -35,6 +41,10 @@ export default {
 @font-face {
   font-family: "Roboto";
   src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
 .thirdBloc {
   display: flex;
@@ -65,6 +75,17 @@ export default {
   padding-left: 50px;
   width: auto;
   font-family: "Roboto";
+  animation: slideRightTitle 1.5s ease-in-out forwards;
+}
+@keyframes slideRightTitle {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .projetBloc {
@@ -80,11 +101,11 @@ export default {
   width: 70%;
   height: 600px;
 }
-.imgOne{
+.imgOne {
   width: 250px;
   padding: 0px 20px;
 }
-.projetTechno{
+.projetTechno {
   color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
@@ -92,22 +113,21 @@ export default {
   margin: 10px 0;
   padding: 10px 20px;
 }
-.projetPitch{
+.projetPitch {
   color: #dddddd;
-  font-family: "Roboto";
+  font-family: "RobotoLight";
   font-size: 25px;
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;
 }
-span{
+span {
   width: 50px;
 }
-.projetBlocOne{
+.projetBlocOne {
   width: 50%;
-
 }
-.imgTwo{
+.imgTwo {
   /*width: 100%;*/
   width: auto;
   height: 590px;
@@ -116,7 +136,7 @@ span{
   margin-left: 60px;
 }
 
-.imgThree{
+.imgThree {
   /*margin-top: 107px;*/
   margin-top: 50px;
   width: 400px;
@@ -124,8 +144,6 @@ span{
   border-radius: 20px;
   height: auto;
 }
-
-
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
 }

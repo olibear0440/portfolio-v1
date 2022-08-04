@@ -23,15 +23,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.mainBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-}
 @font-face {
   font-family: "Dafoe";
   src: url(../assets/font/MrDafoe-Regular.ttf) format("truetype");
@@ -40,10 +31,20 @@ export default {
   font-family: "RobotoLight";
   src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
+.mainBloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  width: auto;
+}
+
 .nameBloc {
   font-family: "Dafoe";
   font-size: 110px;
-  width: 100%;
+  width: auto;
   margin-top: 250px;
   display: flex;
   flex-direction: column;
@@ -54,7 +55,7 @@ export default {
   margin-bottom: 20px;
   color: #dddddd;
   animation: slideUpName 1.5s ease-in-out forwards;
-  width: 100%;
+  width: auto;
 }
 @keyframes slideUpName {
   from {
@@ -69,7 +70,7 @@ export default {
 
 .jobBloc {
   font-family: "RobotoLight";
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +78,7 @@ export default {
   margin-bottom: 50px;
 }
 .myJob {
-  width: 100%;
+  width: auto;
   margin: 0;
   font-size: 50px;
   color: #bbbbbb;
@@ -96,6 +97,10 @@ export default {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .mainBloc{
+    height: 600px;
+    margin-bottom: 50px;
+  }
   .nameBloc {
     margin-top: 150px;
   }

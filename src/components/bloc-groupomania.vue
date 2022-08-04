@@ -2,7 +2,7 @@
   <div class="sixthBloc">
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <img class="imgOne" src="../assets/img/groupomaniaLogo2.png" alt="logo groupomania" />
+        <img class="imgOne" src="../assets/img/icon-left-font-monochrome-white.svg" alt="logo groupomania" />
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
         <img class="imgTwo" src="../assets/img/groupomania1.png" alt="photo groupomania desktop" />
@@ -21,7 +21,7 @@ export default {
   data: () => {
     return {
       techno: "Full Stack - Sql node VueJs",
-      pitch: "Communiquez plus facilement chez Groupomania avec le réseaux social d'entreprise."
+      pitch: "Réseaux social d'entreprise. Connectez vous, postez des messages et commentez ceux des autres employés!"
     };
   },
 };
@@ -36,42 +36,37 @@ export default {
   font-family: "RobotoLight";
   src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
-.sixthdBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: black;
-  height: auto;
-  width: 100%;
-  margin-bottom: 250px;
-  padding-bottom: 50px;
-}
+
 
 .projetBloc {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  margin-bottom: 200px;
 }
 .projetBlocTxt {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70%;
-  height: 600px;
+  width: auto;
+  height: auto;
 }
 .imgOne{
-  width: 500px;
-  margin-bottom: 5px;
+  width: 350px;
+  margin-bottom: 10px;
 }
 .projetTechno{
   color: #dddddd;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
-  margin: 10px 0;
+  margin: 20px 0px 10px 0px;
   padding: 10px 20px;
+  width: auto;
 }
 .projetPitch{
   color: #dddddd;
@@ -80,6 +75,7 @@ export default {
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;
+  width: auto;
 }
 span{
   width: 50px;
@@ -89,7 +85,6 @@ span{
 
 }
 .imgTwo{
-  /*width: 100%;*/
   width: auto;
   height: 590px;
   border: 1px solid #dddddd;
@@ -98,8 +93,6 @@ span{
 }
 
 .imgThree{
-  /*margin-top: 107px;*/
-  margin-top: 50px;
   width: 400px;
   border: 1px solid #dddddd;
   border-radius: 20px;
@@ -109,5 +102,41 @@ span{
 
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .projetBloc{
+    flex-wrap: wrap;
+  }
+  .projetBlocTxt{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .imgOne{
+    width: 250px;
+    padding: 0px;
+  }
+  .projetTechno{
+    font-size: 30px;
+    padding: 0px;
+    text-align: left;
+  }
+  .projetPitch{
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .imgTwo{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+   
+  }
+  .projetBlocOne{
+    width: 100%;
+  }
+  .imgThree{
+    width: 100%;
+    height: auto;
+  }
+
 }
 </style>

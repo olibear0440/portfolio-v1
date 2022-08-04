@@ -42,30 +42,25 @@ export default {
   font-family: "RobotoLight";
   src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
-.thirdBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: black;
-  height: auto;
-  width: 100%;
-  margin-bottom: 150px;
-  padding-bottom: 50px;
-}
+
 
 .projetBloc {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  margin-bottom: 150px;
+  
 }
 .projetBlocTxt {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70%;
-  height: 600px;
+  width: auto;
+  height: auto;
 }
 .imgOne {
   width: 250px;
@@ -78,6 +73,7 @@ export default {
   font-weight: bold;
   margin: 10px 0;
   padding: 10px 20px;
+  width: auto;
 }
 .projetPitch {
   color: #dddddd;
@@ -86,6 +82,7 @@ export default {
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;
+  width: auto;
 }
 span {
   width: 50px;
@@ -94,7 +91,6 @@ span {
   width: 50%;
 }
 .imgTwo {
-  /*width: 100%;*/
   width: auto;
   height: 590px;
   border: 1px solid #dddddd;
@@ -103,8 +99,6 @@ span {
 }
 
 .imgThree {
-  /*margin-top: 107px;*/
-  margin-top: 50px;
   width: 400px;
   border: 1px solid #dddddd;
   border-radius: 20px;
@@ -112,5 +106,41 @@ span {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .projetBloc{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .projetBlocTxt{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .imgOne{
+    width: 150px;
+    padding: 0px;
+  }
+  .projetTechno{
+    font-size: 30px;
+    padding: 0px;
+  }
+  .projetPitch{
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .imgTwo{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+   
+  }
+  .projetBlocOne{
+    width: 100%;
+  }
+  .imgThree{
+    width: 100%;
+    height: auto;
+  }
+
 }
 </style>

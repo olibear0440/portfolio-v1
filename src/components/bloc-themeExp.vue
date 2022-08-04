@@ -1,16 +1,15 @@
 <template>
-    <div class="experienceTitleBloc">
-      <p class="experienceTitle">{{ sectionTitre }}</p>
-    </div>
+  <div class="experienceTitleBloc">
+    <p class="experienceTitle">{{ sectionTitre }}</p>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "BlocThemeExp",
   data: () => {
     return {
-      sectionTitre: "EXPERIENCE"
+      sectionTitre: "EXPERIENCE",
     };
   },
 };
@@ -22,13 +21,12 @@ export default {
   src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
 }
 
-
 .experienceTitleBloc {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  width: auto;
 }
 .experienceTitle {
   font-size: 100px;
@@ -55,5 +53,14 @@ export default {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+  .experienceTitleBloc{
+    margin-bottom: 50px;
+  }
+  .experienceTitle {
+    font-size: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 </style>

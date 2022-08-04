@@ -4,12 +4,13 @@
     <BlocThemeExp />
     <BlocReservia />
     <BlocGroupomania />
-    <BlocOhMyFood />
+    <!--<BlocOhMyFood />
     <BlocOrinoco />
     <BlocThemeXptz />
     <BlocExpertise />
     <BlocThemeApropos />
     <BlocAboutMe />
+    -->
   </div>
 </template>
 
@@ -18,12 +19,12 @@ import BlocName from "@/components/bloc-name.vue";
 import BlocThemeExp from "@/components/bloc-themeExp.vue";
 import BlocReservia from "@/components/bloc-reservia.vue";
 import BlocGroupomania from "@/components/bloc-groupomania.vue";
-import BlocOhMyFood from "@/components/bloc-ohMyFood.vue";
-import BlocOrinoco from "@/components/bloc-orinoco.vue";
-import BlocThemeXptz from "@/components/bloc-themeXptz.vue";
-import BlocExpertise from "@/components/bloc-expertise.vue";
-import BlocThemeApropos from "@/components/bloc-themeApropos.vue";
-import BlocAboutMe from "@/components/bloc-aboutMe.vue";
+//import BlocOhMyFood from "@/components/bloc-ohMyFood.vue";
+//import BlocOrinoco from "@/components/bloc-orinoco.vue";
+//import BlocThemeXptz from "@/components/bloc-themeXptz.vue";
+//import BlocExpertise from "@/components/bloc-expertise.vue";
+//import BlocThemeApropos from "@/components/bloc-themeApropos.vue";
+//import BlocAboutMe from "@/components/bloc-aboutMe.vue";
 
 export default {
   name: "HomeView",
@@ -33,12 +34,12 @@ export default {
     BlocThemeExp,
     BlocReservia,
     BlocGroupomania,
-    BlocOhMyFood,
-    BlocOrinoco,
-    BlocThemeXptz,
-    BlocExpertise,
-    BlocThemeApropos,
-    BlocAboutMe,
+    //BlocOhMyFood,
+    //BlocOrinoco,
+    //BlocThemeXptz,
+    //BlocExpertise,
+    //BlocThemeApropos,
+    //BlocAboutMe,
   },
 };
 </script>

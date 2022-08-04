@@ -1,8 +1,5 @@
 <template>
   <div class="seventhBloc">
-    <div class="expertiseTitleBloc">
-      <p class="expertiseTitle">{{ sectionTitre }}</p>
-    </div>
     <div class="skillsBloc">
       <div class="skillsBlocOne">
         <ul>
@@ -24,7 +21,6 @@ export default {
   name: "BlocExpertise",
   data: () => {
     return {
-      sectionTitre: "EXPERTISE",
       items: [
         { skill: 'Versionner avec GitHub'},
         { skill: 'Implémenter une interface responsive'},
@@ -60,25 +56,7 @@ export default {
   width: 100%;
   margin-bottom: 200px;
 }
-.expertiseTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-.expertiseTitle {
-  font-size: 100px;
-  font-weight: bold;
-  color: #3c4043;
-  margin-top: 200px;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: auto;
-  font-family: "Roboto";
-}
+
 .skillsBloc{
   display: flex;
   flex-direction: row;

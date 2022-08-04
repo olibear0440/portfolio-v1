@@ -1,8 +1,5 @@
 <template>
   <div class="thirdBloc">
-    <div class="experienceTitleBloc">
-      <p class="experienceTitle">{{ sectionTitre }}</p>
-    </div>
     <div class="projetBloc">
       <div class="projetBlocTxt">
         <img class="imgOne" :src="logo" alt="logo site reservia" />
@@ -28,7 +25,6 @@ export default {
       logo: reserviaLogo,
       imgTw: reserviaDesk,
       imgTh: reserviaMob,
-      sectionTitre: "EXPERIENCE",
       techno: "Front-end - html css",
       pitch:
         "Site de réservation. Trouvez des hébergements et des activités dans la ville de votre choix.",
@@ -56,36 +52,6 @@ export default {
   width: 100%;
   margin-bottom: 150px;
   padding-bottom: 50px;
-}
-.experienceTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-}
-.experienceTitle {
-  font-size: 100px;
-  font-weight: bold;
-  color: #3c4043;
-  margin-top: 0;
-  margin-left: 25px;
-  margin-bottom: 40px;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: auto;
-  font-family: "Roboto";
-  animation: slideRightTitle 1.5s ease-in-out forwards;
-}
-@keyframes slideRightTitle {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
 .projetBloc {

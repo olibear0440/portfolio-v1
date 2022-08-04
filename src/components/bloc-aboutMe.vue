@@ -1,7 +1,5 @@
 <template>
   <div class="secondBloc">
-    <div class="aboutMeTitleBloc">
-      <p class="aboutMeTitle">A PROPOS DE MOI</p>
       <div class="aboutMeBlocText">
         <p class="aboutMeTxt">
           Passionné, j'aime me tenir au courant des dernieres technologies et
@@ -24,7 +22,7 @@
         </p>
         <span class="fa fa-envelope fa-4x" aria-hidden="true"></span>
       </div>
-    </div>
+    
   </div>
 </template>
 

@@ -36,7 +36,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: black;
+  background-color: white;
   height: 100vh;
   width: auto;
 }
@@ -53,7 +53,7 @@ export default {
 }
 .myName {
   margin-bottom: 20px;
-  color: #dddddd;
+  color: #3c4043;
   animation: slideUpName 1.5s ease-in-out forwards;
   width: auto;
 }
@@ -81,7 +81,7 @@ export default {
   width: auto;
   margin: 0;
   font-size: 50px;
-  color: #bbbbbb;
+  color: #3c4043;
   animation: slideUpJob 1s 1s ease-in-out forwards;
   opacity: 0;
 }
@@ -97,7 +97,7 @@ export default {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .mainBloc{
+  .mainBloc {
     height: 600px;
     margin-bottom: 50px;
   }
@@ -105,7 +105,7 @@ export default {
     margin-top: 150px;
   }
   .myName {
-    color: white;
+    color: #3c4043;
     font-size: 50px;
     margin-bottom: 50px;
     animation: none;

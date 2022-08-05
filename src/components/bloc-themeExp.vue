@@ -27,11 +27,12 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   width: auto;
+  height: auto;
 }
 .experienceTitle {
   font-size: 100px;
   font-weight: bold;
-  color: #3c4043;
+  color: #eeeeee;
   margin-top: 0;
   margin-left: 25px;
   margin-bottom: 40px;
@@ -53,7 +54,7 @@ export default {
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .experienceTitleBloc{
+  .experienceTitleBloc {
     margin-bottom: 50px;
   }
   .experienceTitle {

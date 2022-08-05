@@ -8,7 +8,7 @@
 <style>
 
 body{
-  background-color: black;
+  background-color: white;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -16,12 +16,12 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   height: auto;
-  background-color: black;
+  background-color: white;
 
 }
 
 nav {
-  background-color: black;
+  background-color: white;
 }
 
 

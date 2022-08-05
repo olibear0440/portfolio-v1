@@ -43,7 +43,6 @@ export default {
   src: url(../assets/font/Roboto-Light.ttf) format("truetype");
 }
 
-
 .projetBloc {
   display: flex;
   flex-direction: row;
@@ -52,7 +51,6 @@ export default {
   width: 100%;
   height: 100vh;
   margin-bottom: 150px;
-  
 }
 .projetBlocTxt {
   display: flex;
@@ -67,7 +65,7 @@ export default {
   padding: 0px 20px;
 }
 .projetTechno {
-  color: #dddddd;
+  color: #3c4043;
   font-size: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -76,7 +74,7 @@ export default {
   width: auto;
 }
 .projetPitch {
-  color: #dddddd;
+  color: #3c4043;
   font-family: "RobotoLight";
   font-size: 25px;
   padding: 5px 20px;
@@ -93,54 +91,59 @@ span {
 .imgTwo {
   width: auto;
   height: 590px;
-  border: 1px solid #dddddd;
+  border: 2px solid #3c4043;
   border-radius: 20px;
   margin-left: 60px;
 }
 
 .imgThree {
   width: 400px;
-  border: 1px solid #dddddd;
+  border: 2px solid #3c4043;
   border-radius: 20px;
   height: auto;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .projetBloc{
+  .projetBloc {
     flex-wrap: wrap;
-    height: auto;
+    height: 560px;
+    margin-bottom: 0px;
   }
-  .projetBlocTxt{
+  .projetBlocTxt {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    height: 410px;
   }
-  .imgOne{
+  .imgOne {
     width: 150px;
     padding: 0px;
   }
-  .projetTechno{
+  .projetTechno {
     font-size: 30px;
     padding: 0px;
   }
-  .projetPitch{
+  .projetPitch {
     font-size: 20px;
     padding: 0px;
     margin-bottom: 50px;
   }
-  .imgTwo{
-    text-align: center;
-    width: 100%;
+  .imgTwo {
+    width: 50%;
     height: auto;
-    margin-left: 0;
-   
+    margin-left: 20px;
+    border-radius: 10px;
   }
-  .projetBlocOne{
-    width: 100%;
+  .projetBlocOne {
+    width: auto;
+    position: relative;
+    left: 230px;
+    top: -180px;
+    padding: 0;
   }
-  .imgThree{
-    width: 100%;
+  .imgThree {
+    width: 30%;
     height: auto;
+    width: 100px;
   }
-
 }
 </style>

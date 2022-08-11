@@ -43,19 +43,12 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
+@import "../assets/font/font-family.css";
 
 .skillsBloc {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   height: auto;
   width: 100%;
   height: 100vh;
@@ -73,6 +66,10 @@ export default {
 }
 .skillsBlocOne {
   margin-top: 100px;
+  margin-left: 50px;
+}
+.skillsBlocTwo {
+  margin-left: 150px;
 }
 
 ul {
@@ -94,6 +91,7 @@ li {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 0;
+
     height: 570px;
   }
   .skillsBlocOne {
@@ -101,16 +99,21 @@ li {
     height: auto;
     margin-top: 0;
     font-family: "Roboto";
+    margin-left: 5px;
   }
   .skillsBlocTwo {
     font-size: 20px;
     height: auto;
     margin-top: 50px;
     font-family: "Roboto";
+    margin-left: 5px;
   }
   ul {
     padding-left: 0;
     margin-right: 0;
+  }
+  li {
+    padding-top: 0;
   }
   .skillsBlocOne ul li {
     padding-bottom: 10px;

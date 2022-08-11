@@ -16,11 +16,7 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-
+@import "../assets/font/font-family.css";
 .experienceTitleBloc {
   display: flex;
   flex-direction: column;

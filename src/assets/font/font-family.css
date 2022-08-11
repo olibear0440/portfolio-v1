@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "RobotoLight";
+    src: url(../font/Roboto-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "RobotoMedium";
+    src: url(../font/Roboto-Medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Dafoe";
+    src: url(../font/MrDafoe-Regular.ttf) format("truetype");
+  }

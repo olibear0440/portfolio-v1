@@ -2,56 +2,39 @@
   <div class="fourthBloc">
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <h1>ohmyfood</h1>
-        <!--<img class="imgOne" src="../assets/img/ohmyfood@2x.svg" alt="logo ohMyFood" />-->
+        <h1>{{ titre }}</h1>
+
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img
-          class="imgTwo"
-          src="../assets/img/ohmyfood1mob.png"
-          alt="photo ohMyFood mobile"
-        />
+        <img class="imgTwo" :src="imgTw" alt="photo ohMyFood mobile" />
       </div>
       <div class="projetBlocOne">
-        <img
-          class="imgThree"
-          src="../assets/img/ohmyfood2mob.png"
-          alt="photo ohMyFood mobile"
-        />
+        <img class="imgThree" :src="imgTh" alt="photo ohMyFood mobile" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ohmyfood1mob from "../assets/img/ohmyfood1mob.png";
+import ohmyfood2mob from "../assets/img/ohmyfood2mob.png";
 export default {
   name: "BlocOhMyFood",
   data: () => {
     return {
+      titre: "ohmyfood",
       techno: "Front-end - html css - 100% mobile",
       pitch:
         "Votre restaurant gastronomique à portée de main, composez votre menu et réservez !",
+      imgTw: ohmyfood1mob,
+      imgTh: ohmyfood2mob,
     };
   },
 };
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
-@font-face {
-  font-family: "shrikhandregular";
-  src: url("../assets/font/shrikhand-regular-webfont.woff2") format("woff2"),
-    url("../assets/font/shrikhand-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import "../assets/font/font-family.css";
 
 .projetBloc {
   display: flex;
@@ -70,19 +53,15 @@ export default {
   width: auto;
   height: auto;
 }
-/*.imgOne{
-  width: 300px;
-  padding: 0px 20px;
-}
-*/
+
 h1 {
-  font-family: "shrikhandregular";
   color: #3c4043;
   width: auto;
   height: auto;
   padding: 0 20px;
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  font-family: "RobotoMedium";
 }
 .projetTechno {
   color: #3c4043;
@@ -133,23 +112,19 @@ span {
     width: 100%;
     margin-bottom: 30px;
   }
-  /*.imgOne{
-    width: 150px;
-    padding: 0px;
-  }
-  */
+
   h1 {
     font-size: 40px;
-    padding-left: 0;
+    padding-left: 5px;
   }
   .projetTechno {
     font-size: 30px;
-    padding: 0px;
+    padding: 0 5px;
     text-align: left;
   }
   .projetPitch {
     font-size: 20px;
-    padding: 0px;
+    padding: 0 5px;
     margin-bottom: 50px;
   }
   .imgTwo {

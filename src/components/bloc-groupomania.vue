@@ -2,53 +2,38 @@
   <div class="sixthBloc">
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <img
-          class="imgOne"
-          src="../assets/img/groupomaniaLogo2.png"
-          alt="logo groupomania"
-        />
+        <h1>{{ titre }}</h1>
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img
-          class="imgTwo"
-          src="../assets/img/groupomania1.png"
-          alt="photo groupomania desktop"
-        />
+        <img class="imgTwo" :src="imgTw" alt="photo groupomania desktop" />
       </div>
       <div class="projetBlocOne">
-        <img
-          class="imgThree"
-          src="../assets/img/groupomaniaMobile.png"
-          alt="photo groupomania mobile"
-        />
+        <img class="imgThree" :src="imgTh" alt="photo groupomania mobile" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import groupomania1 from "../assets/img/groupomania1.png";
+import groupomaniaMobile from "../assets/img/groupomaniaMobile.png";
 export default {
   name: "BlocGroupomania",
   data: () => {
     return {
+      titre: "Groupomania",
       techno: "Full Stack - Sql node VueJs",
       pitch:
-        "Réseaux social d'entreprise. Connectez vous, postez des messages et commentez ceux des autres employés!",
+        "Réseaux social d'entreprise. Connectez vous, postez des messages et commentez les publications des autres employés!",
+      imgTw: groupomania1,
+      imgTh: groupomaniaMobile,
     };
   },
 };
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
-
+@import "../assets/font/font-family.css";
 .projetBloc {
   display: flex;
   flex-direction: row;
@@ -66,9 +51,14 @@ export default {
   width: auto;
   height: auto;
 }
-.imgOne {
-  width: 350px;
-  margin-bottom: 10px;
+h1 {
+  color: #3c4043;
+  width: auto;
+  height: auto;
+  padding: 0 20px;
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-family: "RobotoMedium";
 }
 .projetTechno {
   color: #3c4043;
@@ -103,7 +93,7 @@ span {
 }
 
 .imgThree {
-  width: 100px;
+  width: 400px;
   border: 2px solid #3c4043;
   border-radius: 20px;
   height: auto;
@@ -120,18 +110,19 @@ span {
     height: 410px;
     margin-bottom: 0px;
   }
-  .imgOne {
-    width: 250px;
-    padding: 0px;
+  h1 {
+    padding: 0 5px;
+    font-size: 40px;
   }
   .projetTechno {
     font-size: 30px;
-    padding: 0px;
+    padding: 0 5px;
     text-align: left;
+    margin-top: 10px;
   }
   .projetPitch {
     font-size: 20px;
-    padding: 0px;
+    padding: 0 5px;
     margin-bottom: 50px;
   }
   .imgTwo {

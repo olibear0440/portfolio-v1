@@ -2,32 +2,29 @@
   <div class="fifthBloc">
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <h1>Orinoco</h1>
+        <h1>{{ titre }}</h1>
         <!--<img class="imgOne" src="../assets/img/orinoccoLogo.png" alt="logo orinoco" />-->
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img
-          class="imgTwo"
-          src="../assets/img/orinoco2.png"
-          alt="photo orinoco desktop"
-        />
+        <img class="imgTwo" :src="imgTw" alt="photo orinoco desktop" />
       </div>
       <div class="projetBlocOne">
-        <img
-          class="imgThree"
-          src="../assets/img/orinoco1.png"
-          alt="photo orinoco desktop"
-        />
+        <img class="imgThree" :src="imgTh" alt="photo orinoco desktop" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import imgTwo from "../assets/img/orinoco2.png";
+import imgThree from "../assets/img/orinoco1.png";
 export default {
   name: "BlocOrinoco",
   data: () => {
     return {
+      imgTw: imgTwo,
+      imgTh: imgThree,
+      titre: "Orinoco",
       techno: "Front-end - html css javascript",
       pitch: "Site e-commerce spécialisé dans la vente d'ours en peluche.",
     };
@@ -36,14 +33,7 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
+@import "../assets/font/font-family.css";
 
 .projetBloc {
   display: flex;
@@ -68,8 +58,8 @@ h1 {
   height: auto;
   padding: 0 20px;
   font-size: 50px;
-  margin-bottom: 15px;
-  font-family: "Roboto";
+  margin-bottom: 0px;
+  font-family: "RobotoMedium";
 }
 .projetTechno {
   color: #3c4043;
@@ -120,7 +110,7 @@ span {
   }
   h1 {
     font-size: 40px;
-    padding-left: 0;
+    padding-left: 5px;
   }
   .projetBlocTxt {
     width: 100%;
@@ -129,19 +119,19 @@ span {
   }
   .projetTechno {
     font-size: 30px;
-    padding: 0px;
+    padding: 0 5px;
     text-align: left;
   }
   .projetPitch {
     font-size: 20px;
-    padding: 0px;
+    padding: 0 5px;
     margin-bottom: 50px;
   }
   .imgTwo {
     width: 209px;
     height: 170px;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .projetBlocOne {
     width: auto;
@@ -151,7 +141,7 @@ span {
     height: 170px;
     border-radius: 10px;
     margin-top: 0px;
-    margin-left: 130px;
+    margin-left: 125px;
   }
 }
 </style>

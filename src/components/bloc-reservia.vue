@@ -2,7 +2,7 @@
   <div class="thirdBloc">
     <div class="projetBloc">
       <div class="projetBlocTxt">
-        <img class="imgOne" :src="logo" alt="logo site reservia" />
+        <h1>{{ titre }}</h1>
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
         <img class="imgTwo" :src="imgTw" alt="photo reservia desktop" />
@@ -15,14 +15,13 @@
 </template>
 
 <script>
-import reserviaLogo from "../assets/img/Reservia.svg";
 import reserviaDesk from "../assets/img/reserviaDesk.png";
 import reserviaMob from "../assets/img/reservia_mob.jpg";
 export default {
   name: "BlocReservia",
   data: () => {
     return {
-      logo: reserviaLogo,
+      titre: "Reservia",
       imgTw: reserviaDesk,
       imgTh: reserviaMob,
       techno: "Front-end - html css",
@@ -34,15 +33,7 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
-
+@import "../assets/font/font-family.css";
 .projetBloc {
   display: flex;
   flex-direction: row;
@@ -60,9 +51,15 @@ export default {
   width: auto;
   height: auto;
 }
-.imgOne {
-  width: 250px;
-  padding: 0px 20px;
+
+h1 {
+  color: #3c4043;
+  width: auto;
+  height: auto;
+  padding: 0 20px;
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-family: "RobotoMedium";
 }
 .projetTechno {
   color: #3c4043;
@@ -114,17 +111,17 @@ span {
     margin-bottom: 0;
     height: 410px;
   }
-  .imgOne {
-    width: 150px;
-    padding: 0px;
+  h1 {
+    padding: 0 5px;
+    font-size: 40px;
   }
   .projetTechno {
     font-size: 30px;
-    padding: 0px;
+    padding: 0 5px;
   }
   .projetPitch {
     font-size: 20px;
-    padding: 0px;
+    padding: 0 5px;
     margin-bottom: 50px;
   }
   .imgTwo {

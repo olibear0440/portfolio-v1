@@ -18,8 +18,10 @@
         je développe chaque projet avec l'approche mobile first.
       </p>
       <div class="contactBloc">
-        <p class="aboutMeContact">Me contacter</p>
-        <span class="fa fa-envelope fa-4x" aria-hidden="true"></span>
+        <p class="aboutMeContact">{{ contact }}</p>
+        <a :href="url"
+          ><span class="fa fa-envelope fa-4x" aria-hidden="true"></span
+        ></a>
       </div>
     </div>
   </div>
@@ -28,19 +30,18 @@
 <script>
 export default {
   name: "blocAboutMe",
+  data: () => {
+    return {
+      url: "mailto:olivier.bent@gmail.com",
+      contact: "Me contacter",
+    };
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@font-face {
-  font-family: "Roboto";
-  src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
+@import "../assets/font/font-family.css";
 
 .aboutMeBlocText {
   display: flex;
@@ -81,8 +82,13 @@ export default {
 .contactBloc {
   color: #3c4043;
 }
+
 .fa-envelope {
   cursor: pointer;
+  color: #3c4043;
+}
+.fa-envelope:before {
+  color: #3c4043;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {

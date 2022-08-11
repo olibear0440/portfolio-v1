@@ -23,14 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@font-face {
-  font-family: "Dafoe";
-  src: url(../assets/font/MrDafoe-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "RobotoLight";
-  src: url(../assets/font/Roboto-Light.ttf) format("truetype");
-}
+@import "../assets/font/font-family.css";
 .mainBloc {
   display: flex;
   flex-direction: column;
@@ -69,7 +62,7 @@ export default {
 }
 
 .jobBloc {
-  font-family: "RobotoLight";
+  font-family: "Roboto";
   width: auto;
   display: flex;
   flex-direction: column;

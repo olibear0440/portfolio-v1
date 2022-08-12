@@ -3,7 +3,7 @@
     <div class="projetBloc">
       <div class="projetBlocTxt">
         <h1>{{ titre }}</h1>
-        <p class="projetTechno">{{ techno }}</p>
+        <p class="projetTechno technoFour">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
         <img
           class="imgTwo"
@@ -92,6 +92,24 @@ export default {
       modalBis[3].style.display = "none";
     },
   },
+  mounted() {
+    const ratio = 0.1;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: ratio,
+    };
+    const handleIntersect = function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio > ratio) {
+          entry.target.classList.add("technoFour-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(document.querySelector(".technoFour"));
+  },
 };
 </script>
 
@@ -131,6 +149,15 @@ h1 {
   margin: 10px 0;
   padding: 10px 20px;
   width: auto;
+}
+.technoFour{
+opacity: 0;
+  transform: translateY(50px);
+}
+.technoFour-visible{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s 0.5s;
 }
 .projetPitch {
   color: #3c4043;

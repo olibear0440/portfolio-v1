@@ -47,13 +47,13 @@ export default {
 .myName {
   margin-bottom: 20px;
   color: #3c4043;
-  animation: slideUpName 1.5s ease-in-out forwards;
+  animation: slideUpName 1s ease-out forwards;
   width: auto;
   margin-top: 0px;
 }
 @keyframes slideUpName {
   from {
-    transform: translateY(20px);
+    transform: translateY(100px);
     opacity: 0;
   }
   to {
@@ -77,12 +77,12 @@ export default {
   margin: 0;
   font-size: 50px;
   color: #3c4043;
-  animation: slideUpJob 1s 1s ease-in-out forwards;
+  animation: slideUpJob 1.5s 0.5s ease-in-out forwards;
   opacity: 0;
 }
 @keyframes slideUpJob {
   from {
-    transform: translateY(50px);
+    transform: translateY(100px);
     opacity: 0;
   }
   to {

@@ -1,6 +1,6 @@
 <template>
   <div class="experienceTitleBloc">
-    <p class="experienceTitle">{{ sectionTitre }}</p>
+    <p class="experienceTitle revealExp">{{ sectionTitre }}</p>
   </div>
 </template>
 
@@ -11,6 +11,24 @@ export default {
     return {
       sectionTitre: "EXPERIENCE",
     };
+  },
+  mounted() {
+    const ratio = 0.3;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: ratio,
+    };
+    const handleIntersect = function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio > ratio) {
+          entry.target.classList.add("revealExp-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(document.querySelector(".revealExp"));
   },
 };
 </script>
@@ -35,19 +53,17 @@ export default {
   padding-right: 50px;
   padding-left: 50px;
   width: auto;
-  animation: slideRightTitle 1.5s ease-in-out forwards;
-}
-@keyframes slideRightTitle {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
+.revealExp {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+.revealExp-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 2s;
+}
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .experienceTitleBloc {
     margin-bottom: 30px;
@@ -57,6 +73,13 @@ export default {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  .revealExp {
+    transform: translateX(-50px);
+  }
+  .revealExp-visible {
+    transform: translateX(0);
+    color: #cccccc;
   }
 }
 </style>

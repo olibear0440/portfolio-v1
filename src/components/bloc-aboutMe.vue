@@ -9,7 +9,7 @@
       <p class="aboutMeTxt">
         {{ txt2 }}
       </p>
-      <p class="title">{{ adj23 }}</p>
+      <p class="title">{{ adj3 }}</p>
       <p class="aboutMeTxt">
         {{ txt3 }}
       </p>

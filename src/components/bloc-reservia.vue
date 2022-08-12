@@ -4,7 +4,7 @@
       <!--bloc lié au bloc 1-->
       <div class="projetBlocTxt">
         <h1>{{ titre }}</h1>
-        <p class="projetTechno">{{ techno }}</p>
+        <p class="projetTechno technoOne">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
         <img
           class="imgTwo"
@@ -91,6 +91,24 @@ export default {
       modalBis[0].style.display = "none";
     },
   },
+  mounted() {
+    const ratio = 0.1;
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: ratio,
+    };
+    const handleIntersect = function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio > ratio) {
+          entry.target.classList.add("technoOne-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(document.querySelector(".technoOne"));
+  },
 };
 </script>
 
@@ -131,6 +149,15 @@ h1 {
   padding: 10px 20px;
   width: auto;
 }
+.technoOne {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.technoOne-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 2s 0.5s;
+}
 .projetPitch {
   color: #3c4043;
   font-family: "RobotoLight";
@@ -153,7 +180,8 @@ span {
   border-radius: 20px;
   margin-left: 60px;
 }
-.modal, .modalBis {
+.modal,
+.modalBis {
   display: none;
 }
 
@@ -185,6 +213,7 @@ span {
     font-size: 30px;
     padding: 0 5px;
   }
+  
   .projetPitch {
     font-size: 20px;
     padding: 0 5px;
@@ -196,7 +225,8 @@ span {
     margin-left: 20px;
     border-radius: 10px;
   }
-  .modal, .modalBis {
+  .modal,
+  .modalBis {
     display: none;
     position: fixed;
     z-index: 1;
@@ -208,18 +238,19 @@ span {
     background-color: rgba(0, 0, 0, 0.7);
   }
 
-  .modal-content  {
+  .modal-content {
     width: 95%;
     height: auto;
     margin: 50% auto;
   }
-  .modal-contentBis{
+  .modal-contentBis {
     width: 95%;
     height: auto;
     margin: -100px auto;
   }
-  
-  .modal-imgTw, .modal-imgTh {
+
+  .modal-imgTw,
+  .modal-imgTh {
     width: 100%;
     height: auto;
     border-radius: 10px;

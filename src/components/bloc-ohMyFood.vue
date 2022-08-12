@@ -156,6 +156,10 @@ span {
   border-radius: 20px;
   margin-left: 250px;
 }
+
+.modal, .modalBis {
+  display: none;
+}
 .imgThree {
   /*margin-top: 80px;*/
   width: 400px;

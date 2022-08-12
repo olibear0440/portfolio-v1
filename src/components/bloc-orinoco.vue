@@ -155,6 +155,10 @@ span {
   margin-left: 40px;
 }
 
+.modal, .modalBis {
+  display: none;
+}
+
 .imgThree {
   margin-top: 70px;
   width: 550px;

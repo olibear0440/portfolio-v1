@@ -153,7 +153,7 @@ span {
   border-radius: 20px;
   margin-left: 60px;
 }
-.modal {
+.modal, .modalBis {
   display: none;
 }
 

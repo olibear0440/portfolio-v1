@@ -3,13 +3,52 @@
     <div class="projetBloc">
       <div class="projetBlocTxt">
         <h1>{{ titre }}</h1>
-
         <p class="projetTechno">{{ techno }}</p>
         <p class="projetPitch">{{ pitch }}</p>
-        <img class="imgTwo" :src="imgTw" alt="photo ohMyFood mobile" />
+        <img
+          class="imgTwo"
+          @click="openModal()"
+          :src="imgTw"
+          alt="photo ohMyFood mobile"
+        />
       </div>
+
+      <!--Modal agrandir l'image-->
+      <div class="modal">
+        <div class="modal-content">
+          <img class="modal-imgTw" :src="imgTw" alt="photo reservia desktop" />
+          <span
+            @click="closeModal()"
+            class="fa fa-times"
+            aria-hidden="true"
+          ></span>
+        </div>
+      </div>
+
+      <!--bloc lié aubloc 2-->
       <div class="projetBlocOne">
-        <img class="imgThree" :src="imgTh" alt="photo ohMyFood mobile" />
+        <img
+          class="imgThree"
+          @click="openModalBis()"
+          :src="imgTh"
+          alt="photo ohMyFood mobile"
+        />
+      </div>
+
+      <!--Modal agrandir l'image bis-->
+      <div class="modalBis">
+        <div class="modal-contentBis">
+          <img
+            class="modal-imgTh"
+            :src="imgTh"
+            alt="photo ohMyFood mobile"
+          />
+          <span
+            @click="closeModalBis()"
+            class="fa fa-times"
+            aria-hidden="true"
+          ></span>
+        </div>
       </div>
     </div>
   </div>
@@ -30,6 +69,30 @@ export default {
       imgTh: ohmyfood2mob,
     };
   },
+  methods: {
+    openModal: function () {
+      let modal = document.getElementsByClassName("modal");
+      console.log(modal);
+      modal[2].style.display = "block";
+    },
+    openModalBis: function () {
+      let modalBis = document.getElementsByClassName("modalBis");
+      console.log(modalBis);
+      modalBis[2].style.display = "block";
+    },
+    closeModal: function () {
+      let closeModal = document.getElementsByClassName("fa-times");
+      let modal = document.getElementsByClassName("modal");
+      console.log(closeModal);
+      modal[2].style.display = "none";
+    },
+    closeModalBis: function () {
+      let closeModalBis = document.getElementsByClassName("fa-times");
+      let modalBis = document.getElementsByClassName("modalBis");
+      console.log(closeModalBis);
+      modalBis[2].style.display = "none";
+    },
+  },
 };
 </script>
 
@@ -43,7 +106,6 @@ export default {
   align-items: center;
   width: 100%;
   height: 100vh;
-  margin-bottom: 150px;
 }
 .projetBlocTxt {
   display: flex;
@@ -100,6 +162,7 @@ span {
   border: 2px solid #3c4043;
   border-radius: 20px;
   height: auto;
+  margin-left: 90px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -116,6 +179,7 @@ span {
   h1 {
     font-size: 40px;
     padding-left: 5px;
+    margin-top: 0px;
   }
   .projetTechno {
     font-size: 30px;
@@ -132,6 +196,40 @@ span {
     height: auto;
     margin-left: 55px;
   }
+  .modal, .modalBis {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-content {
+    width: 95%;
+    height: auto;
+    margin: -90px auto;
+  }
+  .modal-contentBis {
+    width: 95%;
+    height: auto;
+    margin: -100px auto;
+  }
+  .modal-imgTw, .modal-imgTh {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .fa-times {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
   .projetBlocOne {
     position: relative;
     left: 170px;
@@ -141,6 +239,7 @@ span {
   .imgThree {
     width: 100px;
     height: auto;
+    margin-left: 0px;
   }
 }
 </style>

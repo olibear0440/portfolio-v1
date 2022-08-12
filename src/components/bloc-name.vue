@@ -27,7 +27,7 @@ export default {
 .mainBloc {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: white;
   height: 100vh;
@@ -38,7 +38,7 @@ export default {
   font-family: "Dafoe";
   font-size: 110px;
   width: auto;
-  margin-top: 250px;
+  margin-top: -100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,10 +49,11 @@ export default {
   color: #3c4043;
   animation: slideUpName 1.5s ease-in-out forwards;
   width: auto;
+  margin-top: 0px;
 }
 @keyframes slideUpName {
   from {
-    transform: translateY(50px);
+    transform: translateY(20px);
     opacity: 0;
   }
   to {
@@ -68,7 +69,8 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 .myJob {
   width: auto;
@@ -95,16 +97,16 @@ export default {
     margin-bottom: 50px;
   }
   .nameBloc {
-    margin-top: 150px;
+    margin-top: 0px;
   }
   .myName {
     color: #3c4043;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     animation: none;
   }
   .myJob {
-    font-size: 30px;
+    font-size: 25px;
     animation: none;
     opacity: 1;
   }

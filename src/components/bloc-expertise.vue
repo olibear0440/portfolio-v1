@@ -51,7 +51,7 @@ export default {
   justify-content: flex-start;
   height: auto;
   width: 100%;
-  height: 100vh;
+  height: 800px;
   margin-top: 50px;
 }
 .skillsBlocOne,
@@ -91,8 +91,7 @@ li {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 0;
-
-    height: 570px;
+    height: 500px;
   }
   .skillsBlocOne {
     font-size: 20px;

@@ -35,7 +35,6 @@ export default {
   padding-right: 50px;
   padding-left: 50px;
   width: auto;
-  font-family: "Roboto";
   animation: slideRightTitle 1.5s ease-in-out forwards;
 }
 @keyframes slideRightTitle {

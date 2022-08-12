@@ -31,11 +31,10 @@ export default {
   color: #eeeeee;
   margin-top: 0;
   margin-left: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   padding-right: 50px;
   padding-left: 50px;
   width: auto;
-  font-family: "Roboto";
   animation: slideRightTitle 1.5s ease-in-out forwards;
 }
 @keyframes slideRightTitle {
@@ -51,7 +50,7 @@ export default {
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .experienceTitleBloc {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .experienceTitle {
     font-size: 50px;

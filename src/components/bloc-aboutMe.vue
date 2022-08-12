@@ -1,21 +1,21 @@
 <template>
   <div class="secondBloc">
     <div class="aboutMeBlocText">
-      <p class="title">Passionné</p>
+      <p class="title">{{ adj1 }}</p>
       <p class="aboutMeTxt">
-        je me tiens au courant des dernieres technologies et concepts du web.
+        {{ txt1 }}
       </p>
-      <p class="title">Attentif</p>
+      <p class="title">{{ adj2 }}</p>
       <p class="aboutMeTxt">
-        j'élabore chaque fonctionnalités selon vos priorités et vos besoins.
+        {{ txt2 }}
       </p>
-      <p class="title">Soucieux</p>
+      <p class="title">{{ adj23 }}</p>
       <p class="aboutMeTxt">
-        j'accorde une attention particulière à l'expérience utilisateur.
+        {{ txt3 }}
       </p>
-      <p class="title">Expert</p>
+      <p class="title">{{ adj4 }}</p>
       <p class="aboutMeTxt">
-        je développe chaque projet avec l'approche mobile first.
+         {{ txt4 }}
       </p>
       <div class="contactBloc">
         <p class="aboutMeContact">{{ contact }}</p>
@@ -32,6 +32,14 @@ export default {
   name: "blocAboutMe",
   data: () => {
     return {
+      adj1: "Passionnée",
+      adj2: "Attentif",
+      adj3: "Soucieux",
+      adj4: "Expert",
+      txt1: "Je me tiens au courant des dernieres technologies et concepts du web.",
+      txt2: "J'élabore chaque fonctionnalités selon vos priorités et vos besoins.",
+      txt3: "J'accorde une attention particulière à l'expérience utilisateur.",
+      txt4: "Je développe chaque projet avec l'approche mobile first.",
       url: "mailto:olivier.bent@gmail.com",
       contact: "Me contacter",
     };
@@ -54,7 +62,7 @@ export default {
   margin-bottom: 50px;
 }
 .title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: #3c4043;
   margin-bottom: 5px;
@@ -63,7 +71,7 @@ export default {
 
 .aboutMeTxt {
   font-family: "RobotoLight";
-  font-size: 30px;
+  font-size: 40px;
   width: auto;
   color: #3c4043;
   margin: 0px 0px 40px 0px;
@@ -100,12 +108,16 @@ export default {
 
   .title {
     margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
   }
   .aboutMeTxt {
     font-size: 20px;
+    margin-bottom: 20px;
   }
   .contactBloc {
     width: auto;
+    margin-bottom: 30px;
   }
   .aboutMeContact {
     font-size: 30px;

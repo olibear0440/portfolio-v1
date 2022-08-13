@@ -107,8 +107,6 @@ export default {
   }
   .myJob {
     font-size: 25px;
-    animation: none;
-    opacity: 1;
   }
 }
 </style>

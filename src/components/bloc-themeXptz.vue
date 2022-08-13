@@ -63,7 +63,7 @@ export default {
 .revealXptz-visible {
   opacity: 1;
   transform: translateX(0);
-  transition: 2s;
+  transition-duration: 1.5s;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .experienceTitleBloc {

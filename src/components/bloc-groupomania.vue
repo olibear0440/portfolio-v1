@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import groupomania1 from "../assets/img/groupomania1.png";
-import groupomaniaMobile from "../assets/img/groupomaniaMobile.png";
+import groupomania1 from "../assets/img/groupomania1.webp";
+import groupomaniaMobile from "../assets/img/groupomaniaMobile.webp";
 export default {
   name: "BlocGroupomania",
   data: () => {

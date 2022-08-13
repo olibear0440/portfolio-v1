@@ -16,7 +16,7 @@
       <!--Modal agrandir l'image-->
       <div class="modal">
         <div class="modal-content">
-          <img class="modal-imgTw" :src="imgTw" alt="photo reservia desktop" />
+          <img class="modal-imgTw" :src="imgTw" alt="photo orinoco" />
           <span
             @click="closeModal()"
             class="fa fa-times"
@@ -41,7 +41,7 @@
           <img
             class="modal-imgTh"
             :src="imgTh"
-            alt="photo orinoco desktop"
+            alt="photo orinoco"
           />
           <span
             @click="closeModalBis()"
@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import imgTwo from "../assets/img/orinoco2.png";
-import imgThree from "../assets/img/orinoco1.png";
+import imgTwo from "../assets/img/orinoco2.webp";
+import imgThree from "../assets/img/orinoco1.webp";
 export default {
   name: "BlocOrinoco",
   data: () => {

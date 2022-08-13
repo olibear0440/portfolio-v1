@@ -16,7 +16,7 @@
       <!--Modal agrandir l'image-->
       <div class="modal">
         <div class="modal-content">
-          <img class="modal-imgTw" :src="imgTw" alt="photo reservia desktop" />
+          <img class="modal-imgTw" :src="imgTw" alt="photo ohMyFood mobile" />
           <span
             @click="closeModal()"
             class="fa fa-times"
@@ -55,8 +55,8 @@
 </template>
 
 <script>
-import ohmyfood1mob from "../assets/img/ohmyfood1mob.png";
-import ohmyfood2mob from "../assets/img/ohmyfood2mob.png";
+import ohmyfood1mob from "../assets/img/ohmyfood1mob.webp";
+import ohmyfood2mob from "../assets/img/ohmyfood2mob.webp";
 export default {
   name: "BlocOhMyFood",
   data: () => {

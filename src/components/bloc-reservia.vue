@@ -53,8 +53,8 @@
 </template>
 
 <script>
-import reserviaDesk from "../assets/img/reserviaDesk.png";
-import reserviaMob from "../assets/img/reservia_mob.jpg";
+import reserviaDesk from "../assets/img/reserviaDesk.webp";
+import reserviaMob from "../assets/img/reservia_mob.webp";
 export default {
   name: "BlocReservia",
   data: () => {

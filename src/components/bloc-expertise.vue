@@ -1,18 +1,16 @@
 <template>
-  <div class="seventhBloc">
-    <div class="skillsBloc">
-      <div class="skillsBlocOne">
-        <ul>
-          <li v-for="item in items" :key="item.skill">{{ item.skill }}</li>
-        </ul>
-      </div>
-      <div class="skillsBlocTwo">
-        <ul>
-          <li v-for="thing in things" :key="thing.techno">
-            {{ thing.techno }}
-          </li>
-        </ul>
-      </div>
+  <div class="skillsBloc">
+    <div class="skillsBlocOne">
+      <ul>
+        <li v-for="item in items" :key="item.skill">{{ item.skill }}</li>
+      </ul>
+    </div>
+    <div class="skillsBlocTwo">
+      <ul>
+        <li v-for="thing in things" :key="thing.techno">
+          {{ thing.techno }}
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -53,6 +51,7 @@ export default {
   width: 100%;
   height: 800px;
   margin-top: 50px;
+  background-color: white;
 }
 .skillsBlocOne,
 .skillsBlocTwo {

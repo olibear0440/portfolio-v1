@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="them">
     <h1 class="revealAp">{{ sectionTitre }}</h1>
   </div>
 </template>
@@ -35,7 +35,11 @@ export default {
 
 <style scoped>
 @import "../assets/font/font-family.css";
-
+.them {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
 h1 {
   font-size: 100px;
   font-weight: bold;
@@ -57,7 +61,6 @@ h1 {
   transition-duration: 1.5s;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  
   h1 {
     font-size: 50px;
     width: 100%;

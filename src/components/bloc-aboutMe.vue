@@ -1,32 +1,26 @@
 <template>
-  <div class="secondBloc">
-    <div class="aboutMeBlocText">
-      <h2 class="title">{{ adj1 }}</h2>
-      <p class="aboutMeTxt">
-        {{ txt1 }}
-      </p>
-      <h2 class="title">{{ adj2 }}</h2>
-      <p class="aboutMeTxt">
-        {{ txt2 }}
-      </p>
-      <h2 class="title">{{ adj3 }}</h2>
-      <p class="aboutMeTxt">
-        {{ txt3 }}
-      </p>
-      <h2 class="title">{{ adj4 }}</h2>
-      <p class="aboutMeTxt">
-        {{ txt4 }}
-      </p>
-      <footer class="contactBloc">
-        <!--<p class="aboutMeContact">{{ contact }}</p>-->
-        <a :href="url"
-          >{{ contact }}<br /><span
-            class="fa fa-envelope fa-4x"
-            
-          ></span
-        ></a>
-      </footer>
-    </div>
+  <div class="aboutMeBlocText">
+    <h2 class="title">{{ adj1 }}</h2>
+    <p class="aboutMeTxt">
+      {{ txt1 }}
+    </p>
+    <h2 class="title">{{ adj2 }}</h2>
+    <p class="aboutMeTxt">
+      {{ txt2 }}
+    </p>
+    <h2 class="title">{{ adj3 }}</h2>
+    <p class="aboutMeTxt">
+      {{ txt3 }}
+    </p>
+    <h2 class="title">{{ adj4 }}</h2>
+    <p class="aboutMeTxt">
+      {{ txt4 }}
+    </p>
+    <footer class="contactBloc">
+      <a :href="url"
+        >{{ contact }}<br /><span class="fa fa-envelope fa-4x"></span
+      ></a>
+    </footer>
   </div>
 </template>
 
@@ -63,6 +57,7 @@ export default {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 50px;
+  background-color: white;
 }
 .title {
   font-size: 40px;

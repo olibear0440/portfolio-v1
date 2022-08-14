@@ -118,6 +118,7 @@ export default {
   width: 100%;
   height: 100vh;
   margin-bottom: 200px;
+  background-color: white;
 }
 .projetBlocTxt {
   display: flex;

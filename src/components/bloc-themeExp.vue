@@ -1,7 +1,7 @@
 <template>
-    <div>
-      <h1 class="revealExp">{{ sectionTitre }}</h1>
-    </div>
+  <div class="them">
+    <h1 class="revealExp">{{ sectionTitre }}</h1>
+  </div>
 </template>
 
 <script>
@@ -35,7 +35,11 @@ export default {
 
 <style scoped>
 @import "../assets/font/font-family.css";
-
+.them {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
 h1 {
   font-size: 100px;
   font-weight: bold;

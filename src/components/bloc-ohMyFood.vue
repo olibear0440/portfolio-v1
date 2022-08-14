@@ -1,54 +1,52 @@
 <template>
-  <div class="fourthBloc">
-    <div class="projetBloc">
-      <div class="projetBlocTxt">
-        <h1>{{ titre }}</h1>
-        <p class="projetTechno technoThree">{{ techno }}</p>
-        <p class="projetPitch">{{ pitch }}</p>
+  <div class="projetBloc">
+    <div class="projetBlocTxt">
+      <h1>{{ titre }}</h1>
+      <h2 class="technoThree">{{ techno }}</h2>
+      <p class="projetPitch">{{ pitch }}</p>
+      <img
+        class="imgTwo"
+        @click="openModal()"
+        :src="imgTw"
+        alt="photo ohMyFood mobile accueil"
+      />
+    </div>
+
+    <!--Modal agrandir l'image-->
+    <div class="modal">
+      <div class="modal-content">
         <img
-          class="imgTwo"
-          @click="openModal()"
+          class="modal-imgTw"
           :src="imgTw"
-          alt="photo ohMyFood mobile"
+          alt="photo ohMyFood mobile plats "
         />
+        <span
+          @click="closeModal()"
+          class="fa fa-times"
+          aria-hidden="true"
+        ></span>
       </div>
+    </div>
 
-      <!--Modal agrandir l'image-->
-      <div class="modal">
-        <div class="modal-content">
-          <img class="modal-imgTw" :src="imgTw" alt="photo ohMyFood mobile" />
-          <span
-            @click="closeModal()"
-            class="fa fa-times"
-            aria-hidden="true"
-          ></span>
-        </div>
-      </div>
+    <!--bloc lié aubloc 2-->
+    <div class="projetBlocOne">
+      <img
+        class="imgThree"
+        @click="openModalBis()"
+        :src="imgTh"
+        alt="photo ohMyFood mobile"
+      />
+    </div>
 
-      <!--bloc lié aubloc 2-->
-      <div class="projetBlocOne">
-        <img
-          class="imgThree"
-          @click="openModalBis()"
-          :src="imgTh"
-          alt="photo ohMyFood mobile"
-        />
-      </div>
-
-      <!--Modal agrandir l'image bis-->
-      <div class="modalBis">
-        <div class="modal-contentBis">
-          <img
-            class="modal-imgTh"
-            :src="imgTh"
-            alt="photo ohMyFood mobile"
-          />
-          <span
-            @click="closeModalBis()"
-            class="fa fa-times"
-            aria-hidden="true"
-          ></span>
-        </div>
+    <!--Modal agrandir l'image bis-->
+    <div class="modalBis">
+      <div class="modal-contentBis">
+        <img class="modal-imgTh" :src="imgTh" alt="photo ohMyFood mobile" />
+        <span
+          @click="closeModalBis()"
+          class="fa fa-times"
+          aria-hidden="true"
+        ></span>
       </div>
     </div>
   </div>
@@ -139,33 +137,34 @@ h1 {
   width: auto;
   height: auto;
   padding: 0 20px;
-  font-size: 50px;
+  font-size: 100px;
   margin-bottom: 0px;
   font-family: "RobotoMedium";
 }
-.projetTechno {
+h2 {
   color: #3c4043;
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: lighter;
+  text-align: left;
   margin: 10px 0;
   padding: 10px 20px;
   width: auto;
 }
 
-.technoThree{
-opacity: 0;
+.technoThree {
+  opacity: 0;
   transform: translateY(50px);
 }
-.technoThree-visible{
+.technoThree-visible {
   opacity: 1;
   transform: translateY(0);
-  transition: 2s 0.5s;
+  transition: 1s 0.5s;
 }
 .projetPitch {
   color: #3c4043;
   font-family: "RobotoLight";
-  font-size: 25px;
+  font-size: 40px;
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;
@@ -178,22 +177,22 @@ span {
   width: 50%;
 }
 .imgTwo {
-  width: auto;
-  height: 590px;
+  width: 276px;
+  height: 594px;
   border: 2px solid #3c4043;
   border-radius: 20px;
   margin-left: 250px;
 }
 
-.modal, .modalBis {
+.modal,
+.modalBis, .modal-content, .modal-contentBis {
   display: none;
 }
 .imgThree {
-  /*margin-top: 80px;*/
-  width: 400px;
+  width: 404px;
   border: 2px solid #3c4043;
   border-radius: 20px;
-  height: auto;
+  height: 870px;
   margin-left: 90px;
 }
 
@@ -213,7 +212,7 @@ span {
     padding-left: 5px;
     margin-top: 0px;
   }
-  .projetTechno {
+  h2 {
     font-size: 30px;
     padding: 0 5px;
     text-align: left;
@@ -228,7 +227,8 @@ span {
     height: auto;
     margin-left: 55px;
   }
-  .modal, .modalBis {
+  .modal,
+  .modalBis {
     display: none;
     position: fixed;
     z-index: 1;
@@ -250,7 +250,8 @@ span {
     height: auto;
     margin: -100px auto;
   }
-  .modal-imgTw, .modal-imgTh {
+  .modal-imgTw,
+  .modal-imgTh {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -273,5 +274,8 @@ span {
     height: auto;
     margin-left: 0px;
   }
+  .technoThree-visible {
+  transition-duration: 1.5s;
+}
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div class="mainBloc">
     <div class="nameBloc">
-      <p class="myName">{{ nomPrenom }}</p>
+      <h1>{{ nomPrenom }}</h1>
     </div>
     <div class="jobBloc">
-      <p class="myJob">{{ monMetier }}</p>
+      <h2>{{ monMetier }}</h2>
     </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
 
 .nameBloc {
   font-family: "Dafoe";
-  font-size: 110px;
+  font-size: 90px;
   width: auto;
   margin-top: -100px;
   display: flex;
@@ -44,7 +44,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.myName {
+h1 {
+  font-weight: lighter;
   margin-bottom: 20px;
   color: #3c4043;
   animation: slideUpName 1s ease-out forwards;
@@ -72,17 +73,18 @@ export default {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-.myJob {
+h2 {
   width: auto;
   margin: 0;
-  font-size: 50px;
+  font-weight: lighter;
+  font-size: 70px;
   color: #3c4043;
-  animation: slideUpJob 1.5s 0.5s ease-in-out forwards;
+  animation: slideUpJob 1.5s 0.7s ease-in-out forwards;
   opacity: 0;
 }
 @keyframes slideUpJob {
   from {
-    transform: translateY(100px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
@@ -99,14 +101,15 @@ export default {
   .nameBloc {
     margin-top: 0px;
   }
-  .myName {
-    color: #3c4043;
+  h1 {
     font-size: 50px;
     margin-bottom: 0px;
     animation: none;
+    width: 100%
   }
-  .myJob {
+  h2 {
     font-size: 25px;
+    width: 100%;
   }
 }
 </style>

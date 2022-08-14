@@ -1,54 +1,48 @@
 <template>
-  <div class="sixthBloc">
-    <div class="projetBloc">
-      <div class="projetBlocTxt">
-        <h1>{{ titre }}</h1>
-        <p class="projetTechno technoTwo">{{ techno }}</p>
-        <p class="projetPitch">{{ pitch }}</p>
-        <img
-          class="imgTwo"
-          @click="openModal()"
-          :src="imgTw"
-          alt="photo groupomania desktop"
-        />
-      </div>
+  <div class="projetBloc">
+    <div class="projetBlocTxt">
+      <h1>{{ titre }}</h1>
+      <h2 class="technoTwo">{{ techno }}</h2>
+      <p class="projetPitch">{{ pitch }}</p>
+      <img
+        class="imgTwo"
+        @click="openModal()"
+        :src="imgTw"
+        alt="photo groupomania desktop"
+      />
+    </div>
 
-      <!--Modal agrandir l'image-->
-      <div class="modal">
-        <div class="modal-content">
-          <img class="modal-imgTw" :src="imgTw" alt="photo reservia desktop" />
-          <span
-            @click="closeModal()"
-            class="fa fa-times"
-            aria-hidden="true"
-          ></span>
-        </div>
+    <!--Modal agrandir l'image-->
+    <div class="modal">
+      <div class="modal-content">
+        <img class="modal-imgTw" :src="imgTw" alt="photo reservia desktop" />
+        <span
+          @click="closeModal()"
+          class="fa fa-times"
+          aria-hidden="true"
+        ></span>
       </div>
+    </div>
 
-      <!--bloc lié aubloc 2-->
-      <div class="projetBlocOne">
-        <img
-          class="imgThree"
-          @click="openModalBis()"
-          :src="imgTh"
-          alt="photo groupomania mobile"
-        />
-      </div>
+    <!--bloc lié aubloc 2-->
+    <div class="projetBlocOne">
+      <img
+        class="imgThree"
+        @click="openModalBis()"
+        :src="imgTh"
+        alt="photo groupomania mobile"
+      />
+    </div>
 
-      <!--Modal agrandir l'image bis-->
-      <div class="modalBis">
-        <div class="modal-contentBis">
-          <img
-            class="modal-imgTh"
-            :src="imgTh"
-            alt="photo groupomania mobile"
-          />
-          <span
-            @click="closeModalBis()"
-            class="fa fa-times"
-            aria-hidden="true"
-          ></span>
-        </div>
+    <!--Modal agrandir l'image bis-->
+    <div class="modalBis">
+      <div class="modal-contentBis">
+        <img class="modal-imgTh" :src="imgTh" alt="photo groupomania mobile" />
+        <span
+          @click="closeModalBis()"
+          class="fa fa-times"
+          aria-hidden="true"
+        ></span>
       </div>
     </div>
   </div>
@@ -137,32 +131,33 @@ h1 {
   width: auto;
   height: auto;
   padding: 0 20px;
-  font-size: 50px;
+  font-size: 100px;
   margin-bottom: 0px;
   font-family: "RobotoMedium";
 }
-.projetTechno {
+h2 {
   color: #3c4043;
-  font-size: 40px;
+  font-size: 60px;
+  text-align: left;
   font-family: "Roboto";
-  font-weight: bold;
+  font-weight: lighter;
   margin: 20px 0px 10px 0px;
   padding: 10px 20px;
   width: auto;
 }
-.technoTwo{
-opacity: 0;
+.technoTwo {
+  opacity: 0;
   transform: translateY(50px);
 }
-.technoTwo-visible{
+.technoTwo-visible {
   opacity: 1;
   transform: translateY(0);
-  transition: 2s 0.5s;
+  transition: 1s 0.5s;
 }
 .projetPitch {
   color: #3c4043;
   font-family: "RobotoLight";
-  font-size: 25px;
+  font-size: 40px;
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;
@@ -175,23 +170,23 @@ span {
   width: 50%;
 }
 .imgTwo {
-  width: auto;
-  height: 590px;
+  width: 720px;
+  height: 594px;
   border: 2px solid #3c4043;
   border-radius: 20px;
   margin-left: 60px;
 }
 
-.modal, .modalBis {
+.modal,
+.modalBis, .modal-content, .modal-contentBis {
   display: none;
 }
 
 .imgThree {
-  width: 400px;
+  width: 404px;
   border: 2px solid #3c4043;
   border-radius: 20px;
-  height: auto;
-  margin-right: 20px;
+  height: 870px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -210,7 +205,7 @@ span {
     font-size: 40px;
     margin-top: 0px;
   }
-  .projetTechno {
+  h2 {
     font-size: 30px;
     padding: 0 5px;
     text-align: left;
@@ -276,5 +271,8 @@ span {
     width: 100px;
     height: auto;
   }
+  .technoTwo-visible {
+  transition-duration: 1.5s;
+}
 }
 </style>

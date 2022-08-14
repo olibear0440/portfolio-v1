@@ -1,7 +1,7 @@
 <template>
-  <div class="experienceTitleBloc">
-    <p class="experienceTitle revealExp">{{ sectionTitre }}</p>
-  </div>
+    <div>
+      <h1 class="revealExp">{{ sectionTitre }}</h1>
+    </div>
 </template>
 
 <script>
@@ -9,11 +9,11 @@ export default {
   name: "BlocThemeExp",
   data: () => {
     return {
-      sectionTitre: "EXPERIENCE",
+      sectionTitre: "EXPERIENCES",
     };
   },
   mounted() {
-    const ratio = 0.3;
+    const ratio = 0.1;
     const options = {
       root: null,
       rootMargin: "0px",
@@ -35,29 +35,22 @@ export default {
 
 <style scoped>
 @import "../assets/font/font-family.css";
-.experienceTitleBloc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: auto;
-  height: auto;
-}
-.experienceTitle {
+
+h1 {
   font-size: 100px;
   font-weight: bold;
-  color: #eeeeee;
+  color: #919191;
   margin-top: 0;
-  margin-left: 25px;
   margin-bottom: 0px;
   padding-right: 50px;
   padding-left: 50px;
-  width: auto;
+  width: 100%;
+  text-align: left;
 }
 
 .revealExp {
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-200px);
 }
 .revealExp-visible {
   opacity: 1;
@@ -65,14 +58,12 @@ export default {
   transition-duration: 1.5s;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  .experienceTitleBloc {
-    margin-bottom: 30px;
-  }
-  .experienceTitle {
+  h1 {
     font-size: 50px;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 30px 0;
+    text-align: center;
   }
   .revealExp {
     transform: translateX(-50px);

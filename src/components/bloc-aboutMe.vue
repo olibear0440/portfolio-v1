@@ -1,28 +1,31 @@
 <template>
   <div class="secondBloc">
     <div class="aboutMeBlocText">
-      <p class="title">{{ adj1 }}</p>
+      <h2 class="title">{{ adj1 }}</h2>
       <p class="aboutMeTxt">
         {{ txt1 }}
       </p>
-      <p class="title">{{ adj2 }}</p>
+      <h2 class="title">{{ adj2 }}</h2>
       <p class="aboutMeTxt">
         {{ txt2 }}
       </p>
-      <p class="title">{{ adj3 }}</p>
+      <h2 class="title">{{ adj3 }}</h2>
       <p class="aboutMeTxt">
         {{ txt3 }}
       </p>
-      <p class="title">{{ adj4 }}</p>
+      <h2 class="title">{{ adj4 }}</h2>
       <p class="aboutMeTxt">
-         {{ txt4 }}
+        {{ txt4 }}
       </p>
-      <div class="contactBloc">
-        <p class="aboutMeContact">{{ contact }}</p>
+      <footer class="contactBloc">
+        <!--<p class="aboutMeContact">{{ contact }}</p>-->
         <a :href="url"
-          ><span class="fa fa-envelope fa-4x" aria-hidden="true"></span
+          >{{ contact }}<br /><span
+            class="fa fa-envelope fa-4x"
+            
+          ></span
         ></a>
-      </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -78,25 +81,30 @@ export default {
   padding: 10px 0px;
 }
 
-.aboutMeContact {
+a {
   font-size: 40px;
+  text-decoration: none;
   font-weight: bold;
   font-family: "Roboto";
   color: #3c4043;
-  width: 500px;
+  width: auto;
   margin-top: 0;
   margin-bottom: 15px;
 }
 .contactBloc {
   color: #3c4043;
+  display: flex;
+  flex-direction: column;
 }
 
 .fa-envelope {
   cursor: pointer;
   color: #3c4043;
+  font-size: 2em;
+  margin-top: 10px;
 }
 .fa-envelope:before {
-  color: #3c4043;
+  color: #919191;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -119,8 +127,8 @@ export default {
     width: auto;
     margin-bottom: 30px;
   }
-  .aboutMeContact {
-    font-size: 30px;
+  a {
+    font-size: 25px;
     width: auto;
   }
 }

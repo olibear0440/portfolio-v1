@@ -174,7 +174,7 @@ span {
 .imgTwo {
   width: 720px;
   height: 594px;
-  border: 2px solid #3c4043;
+  border: 3px solid #3c4043;
   border-radius: 20px;
   margin-left: 40px;
 }
@@ -188,7 +188,7 @@ span {
   margin-top: 70px;
   margin-left: 50px;
   width: 620px;
-  border: 2px solid #3c4043;
+  border: 3px solid #3c4043;
   border-radius: 20px;
   height: 637px;
 }
@@ -224,6 +224,7 @@ span {
     height: 170px;
     border-radius: 10px;
     margin-left: 20px;
+    border: solid 2px #3c4043;
   }
 
   .modal,
@@ -273,6 +274,7 @@ span {
     border-radius: 10px;
     margin-top: 0px;
     margin-left: 110px;
+    border: solid 2px #3c4043;
   }
   .technoFour-visible {
   transition-duration: 1.5s;

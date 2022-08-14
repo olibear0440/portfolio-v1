@@ -173,7 +173,7 @@ span {
 .imgTwo {
   width: 720px;
   height: 594px;
-  border: 2px solid #3c4043;
+  border: 3px solid #3c4043;
   border-radius: 20px;
   margin-left: 60px;
 }
@@ -185,7 +185,7 @@ span {
 
 .imgThree {
   width: 404px;
-  border: 2px solid #3c4043;
+  border: 3px solid #3c4043;
   border-radius: 20px;
   height: 870px;
 }
@@ -223,6 +223,7 @@ span {
     margin-left: 20px;
     border-radius: 10px;
     margin-top: 30px;
+    border: solid 2px #3c4043;
   }
   .modal,
   .modalBis {
@@ -273,6 +274,7 @@ span {
   .imgThree {
     width: 100px;
     height: auto;
+    border: solid 2px #3c4043;
   }
   .technoTwo-visible {
   transition-duration: 1.5s;

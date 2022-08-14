@@ -239,11 +239,13 @@ span {
   }
 
   .modal-content {
+    display: block;
     width: 95%;
     height: auto;
     margin: 50% auto;
   }
   .modal-contentBis {
+    display: block;
     width: 95%;
     height: auto;
     margin: 30% auto;

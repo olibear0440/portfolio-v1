@@ -238,14 +238,16 @@ span {
   }
 
   .modal-content {
+    display: block;
     width: 95%;
     height: auto;
     margin: 50% auto;
   }
   .modal-contentBis {
-    width: 95%;
+    display: block;
+    width: 80%;
     height: auto;
-    margin: -100px auto;
+    margin: -60px auto;
   }
 
   .modal-imgTw,

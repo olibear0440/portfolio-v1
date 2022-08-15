@@ -133,13 +133,13 @@ h1 {
   width: auto;
   height: auto;
   padding: 0 20px;
-  font-size: 100px;
+  font-size: 80px;
   margin-bottom: 0px;
   font-family: "RobotoMedium";
 }
 h2 {
   color: #3c4043;
-  font-size: 60px;
+  font-size: 50px;
   text-align: left;
   font-family: "Roboto";
   font-weight: lighter;
@@ -159,7 +159,7 @@ h2 {
 .projetPitch {
   color: #3c4043;
   font-family: "RobotoLight";
-  font-size: 40px;
+  font-size: 35px;
   padding: 5px 20px;
   margin: 30px 0px 80px 0px;
   text-align: start;

@@ -36,7 +36,7 @@ export default {
 
 .nameBloc {
   font-family: "Dafoe";
-  font-size: 90px;
+  font-size: 70px;
   width: auto;
   margin-top: -100px;
   display: flex;
@@ -77,7 +77,7 @@ h2 {
   width: auto;
   margin: 0;
   font-weight: lighter;
-  font-size: 70px;
+  font-size: 50px;
   color: #3c4043;
   animation: slideUpJob 1.5s 0.7s ease-in-out forwards;
   opacity: 0;

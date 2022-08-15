@@ -41,13 +41,13 @@ export default {
   height: auto;
 }
 h1 {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: bold;
   color: #919191;
   margin-top: 0;
   margin-bottom: 0px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 20px;
   width: 100%;
   text-align: left;
 }

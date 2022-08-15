@@ -52,23 +52,24 @@ export default {
   height: 800px;
   margin-top: 50px;
   background-color: white;
+  margin-bottom: 50px;
 }
 .skillsBlocOne,
 .skillsBlocTwo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
   width: auto;
   color: #3c4043;
   font-family: "RobotoLight";
 }
 .skillsBlocOne {
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 .skillsBlocTwo {
-  margin-left: 150px;
+  margin-left: 200px;
 }
 
 ul {

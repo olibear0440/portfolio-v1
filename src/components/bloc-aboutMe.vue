@@ -60,7 +60,7 @@ export default {
   background-color: white;
 }
 .title {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   color: #3c4043;
   margin-bottom: 5px;
@@ -69,7 +69,7 @@ export default {
 
 .aboutMeTxt {
   font-family: "RobotoLight";
-  font-size: 40px;
+  font-size: 35px;
   width: auto;
   color: #3c4043;
   margin: 0px 0px 40px 0px;
@@ -77,7 +77,7 @@ export default {
 }
 
 a {
-  font-size: 40px;
+  font-size: 35px;
   text-decoration: none;
   font-weight: bold;
   font-family: "Roboto";

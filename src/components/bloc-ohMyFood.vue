@@ -59,7 +59,7 @@ export default {
   name: "BlocOhMyFood",
   data: () => {
     return {
-      titre: "ohmyfood",
+      titre: "Ohmyfood",
       techno: "Front-end - html css - 100% mobile",
       pitch:
         "Votre restaurant gastronomique à portée de main, composez votre menu et réservez !",

@@ -1,0 +1,70 @@
+/* Animations des cercles svg fichier blocSavoirFaire.css */
+@keyframes circleHtml {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 110;
+  }
+}
+@keyframes circleCss {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 110;
+  }
+}
+
+@keyframes circleJavascript {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+@keyframes circleVuejs {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+@keyframes circleNode {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+@keyframes circleSql {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 176;
+  }
+}
+
+@keyframes circleMongo {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 176;
+  }
+}
+
+@keyframes circleResp {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 110;
+  }
+}

@@ -1,0 +1,254 @@
+.blocSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding: 0 15px 0 15px;
+  width: auto;
+  height: auto;
+  margin-bottom: 50px;
+}
+.blocSavoir {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.softSkillsTitre,
+.capaciteTitre {
+  width: auto;
+  font-family: "RobotoMedium";
+  font-size: 22px;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: #3c4043;
+  letter-spacing: 0.1rem;
+}
+
+.savoirTitre {
+  width: auto;
+  font-family: "RobotoMedium";
+  font-size: 22px;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+  color: #3c4043;
+  letter-spacing: 0.1rem;
+}
+.contain {
+  display: none;
+}
+.savoirUn,
+.savoirDeux {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  font-family: "RobotoMedium";
+  font-size: 17px;
+}
+.blocItem {
+  width: 15%;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+.blocCircle {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+svg circle {
+  fill: none;
+  stroke: orange;
+  stroke-width: 10px;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: rgba(145, 145, 145, 0.2);
+}
+@import "./animations.css";
+svg .circleHtml {
+  animation: circleHtml 2s forwards;
+}
+svg .circleCss {
+  animation: circleCss 2s forwards;
+}
+svg .circleJavascript {
+  animation: circleJavascript 2s forwards;
+}
+svg .circleVuejs {
+  animation: circleVuejs 2s forwards;
+}
+svg .circleNode {
+  animation: circleNode 2s forwards;
+}
+svg .circleSql {
+  animation: circleSql 2s forwards;
+}
+svg .circleMongo {
+  animation: circleMongo 2s forwards;
+}
+svg .circleResp {
+  animation: circleResp 2s forwards;
+}
+
+.pourcentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: 400;
+  color: #3c4043;
+}
+h4 {
+  text-transform: uppercase;
+  color: #3c4043;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+@media screen and (min-width: 375px) and (max-width: 1600px) {
+  .blocSkills {
+    width: auto;
+    margin: 0;
+    margin-bottom: 50px;
+    height: auto;
+    padding: 0;
+  }
+  .savoirTitre {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .softSkillsList {
+    padding-left: 0;
+  }
+  .blocSavoir {
+    width: 100%;
+  }
+
+  .skillPourcentage {
+    max-width: 90%;
+  }
+
+  .contain {
+    width: 95%;
+    padding: 0 0 0 10px;
+    display: block;
+  }
+  .containSkills {
+    width: 100%;
+  }
+  .skillName {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #3c4043;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+    letter-spacing: 0.1rem;
+  }
+  .skillBar {
+    height: 10px;
+    background-color: rgba(145, 145, 145, 0.2);
+    border-radius: 3px;
+  }
+  .skillPourcentage {
+    height: 10px;
+    background-color: orange;
+    border-radius: 3px;
+    position: relative;
+    max-width: 90%;
+    animation: fillBar 3s ease forwards;
+  }
+  .skillHtml {
+    max-width: 75%;
+  }
+  .skillCss {
+    max-width: 75%;
+  }
+  .skillJava {
+    max-width: 70%;
+  }
+  .skillVue {
+    max-width: 70%;
+  }
+  .skillNode {
+    max-width: 70%;
+  }
+  .skillMysql {
+    max-width: 60%;
+  }
+  .skillMongo {
+    max-width: 60%;
+  }
+  .skillResp {
+    max-width: 75%;
+  }
+  .skillPourcentage::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #3c4043;
+    color: white;
+    border-radius: 4px;
+    font-size: 10px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  .skillPourcentage::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #3c4043;
+    top: -20px;
+    right: 0;
+    transform: translate(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  @keyframes fillBar {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .savoirUn,
+  .savoirDeux {
+    flex-wrap: wrap;
+    display: none;
+  }
+  .blocItem {
+    width: 50%;
+    padding: 0;
+    text-align: center;
+  }
+  .blocCircle {
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+  }
+}

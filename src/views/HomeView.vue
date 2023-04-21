@@ -1,53 +1,51 @@
 <template>
   <div class="home">
-    <BlocName />
-    <BlocThemeExp />
-    <BlocReservia />
-    <BlocGroupomania />
-    <BlocOhMyFood />
-    <BlocOrinoco />
-    <BlocThemeXptz />
-    <BlocExpertise />
-    <BlocThemeApropos />
-    <BlocAboutMe />
+    <HomePage />
+  </div>
+  <div class="displayMobileViews">
+    <Portfolio />
+    <Apropos />
+    <Contact />
   </div>
 </template>
 
 <script>
-import BlocName from "@/components/bloc-name.vue";
-import BlocThemeExp from "@/components/bloc-themeExp.vue";
-import BlocReservia from "@/components/bloc-reservia.vue";
-import BlocGroupomania from "@/components/bloc-groupomania.vue";
-import BlocOhMyFood from "@/components/bloc-ohMyFood.vue";
-import BlocOrinoco from "@/components/bloc-orinoco.vue";
-import BlocThemeXptz from "@/components/bloc-themeXptz.vue";
-import BlocExpertise from "@/components/bloc-expertise.vue";
-import BlocThemeApropos from "@/components/bloc-themeApropos.vue";
-import BlocAboutMe from "@/components/bloc-aboutMe.vue";
-
+import HomePage from "@/components/homePage.vue";
+import Portfolio from "../views/MonPortfolio.vue";
+import Apropos from "../views/Apropos.vue";
+import Contact from "../views/Contact.vue";
 export default {
   name: "HomeView",
-
   components: {
-    BlocName,
-    BlocThemeExp,
-    BlocReservia,
-    BlocGroupomania,
-    BlocOhMyFood,
-    BlocOrinoco,
-    BlocThemeXptz,
-    BlocExpertise,
-    BlocThemeApropos,
-    BlocAboutMe,
+    HomePage,
+    Portfolio,
+    Apropos,
+    Contact,
   },
 };
 </script>
 <style scoped>
 .home {
-  max-width: 1440px;
+  width: 70%;
   margin: 0 auto;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-@media screen and (min-width: 375px) and (max-width: 720px) {
+.displayMobileViews {
+  display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 1200px) {
+  .home {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .displayMobileViews {
+    display: block;
+  }
 }
 </style>

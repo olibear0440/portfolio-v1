@@ -1,0 +1,154 @@
+nav {
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  right: 100px;
+}
+ul {
+  height: 400px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+li {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+}
+
+li:hover {
+  animation: navSlide 0.3s ease forwards;
+  border: none;
+}
+@keyframes navSlide {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 200px;
+    border-radius: 25px;
+    background-color: orange;
+  }
+}
+
+a {
+  color: #3c4043;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.fa-suitcase,
+.fa-envelope-open {
+  border-radius: 50%;
+  font-size: 30px;
+
+  margin-right: 5px;
+}
+.fa-envelope-open {
+  font-size: 28px;
+}
+.fa-home {
+  border-radius: 50%;
+  font-size: 35px;
+  margin-right: 5px;
+}
+
+.fa-user {
+  border-radius: 50%;
+  position: relative;
+  left: -2px;
+  margin-right: 5px;
+}
+.menu {
+  width: 150px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease;
+  height: auto;
+  padding: 15px;
+  text-align: start;
+  font-size: 16px;
+}
+.menu:hover {
+  opacity: 1;
+  color: white;
+}
+
+.fa-suitcase:hover,
+.fa-user:hover,
+.fa-envelope-open:hover,
+.fa-home:hover {
+  border: 0px;
+}
+@media screen and (min-width: 375px) and (max-width: 1200px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    bottom: 30px;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+  }
+  li {
+    background-color: orange;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
+  }
+  li:hover {
+    animation: none;
+  }
+
+  a {
+    justify-content: center;
+    color: white;
+  }
+  .fa-home,
+  .fa-suitcase,
+  .fa-user,
+  .fa-envelope-open {
+    font-size: 25px;
+    text-align: center;
+  }
+  .fa-user {
+    left: 0;
+  }
+  .active {
+    color: white;
+  }
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,119 @@
+.homeBloc {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainBloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  margin: 0 auto;
+  width: auto;
+}
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 100px 0;
+  opacity: 0;
+  animation: fadePic 1s 0.5s ease-out forwards;
+}
+@keyframes fadePic {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nameBloc {
+  width: auto;
+  height: auto;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preTitre {
+  font-size: 150px;
+  font-family: "Mr Dafoe", cursive;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  color: #3c4043;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  animation: slideUpJob 1s 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+
+.jobBloc {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.secTitre {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  margin: 0;
+  font-size: 40px;
+  color: #3c4043;
+  animation: slideUpJob 1s 1.3s ease-in-out forwards;
+  opacity: 0;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+}
+@keyframes slideUpJob {
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1135px) {
+  .homeBloc{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+  }
+ .mainBloc{
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+  .nameBloc{
+     margin-top: -10px;
+     width: 100%;
+  }
+  .preTitre{
+    font-size: 50px;
+  }
+  
+  .secTitre{
+    font-size: 20px;
+
+  }
+  
+}

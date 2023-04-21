@@ -1,26 +1,37 @@
 <template>
-  
-  <router-view/>
+  <NavPage />
 </template>
 
-<style>
+<script>
+import NavPage from "./components/nav.vue";
 
-body{
-  background-color: white;
+export default {
+  name: "App",
+  components: {
+    NavPage,
+  },
+};
+</script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   height: auto;
+  width: 100%;
   background-color: white;
-
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  background-color: white;
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  #app{
+    width: 100%;
 }
-
-
+}
 </style>

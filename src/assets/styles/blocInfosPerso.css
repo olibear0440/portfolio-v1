@@ -1,0 +1,390 @@
+.infosPerso {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-top: 30px;
+}
+.blocUn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.mesInfos,
+.blocCapacite,
+.blocFo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+.mesInfos {
+  background-color: rgba(145, 145, 145, 0.2);
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+.mesInfosTitre {
+  font-family: "RobotoMedium";
+  font-size: 22px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  color: #3c4043;
+  width: auto;
+  letter-spacing: 0.1rem;
+}
+
+.mesInfosBloc {
+  width: 100%;
+  height: 400px;
+}
+.mesInfosList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.list {
+  width: 100%;
+  margin-bottom: 8px;
+  justify-content: flex-start;
+  letter-spacing: 0.1rem;
+  padding: 5px 0 5px 0;
+}
+
+.titre {
+  width: auto;
+  color: rgba(145, 145, 145, 0.8);
+}
+.nom,
+.prenom,
+.age,
+.nationalite,
+.freelance,
+.adresse,
+.numero,
+.email {
+  width: auto;
+  padding-left: 5px;
+  color: #3c4043;
+  font-weight: lighter;
+}
+.freelance {
+  color: #2bc42b;
+}
+
+.blocFo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 209, 67, 1) 0%,
+    rgba(255, 145, 83, 1) 90%
+  );
+  border-radius: 15px;
+}
+.blocSoftSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.softSkillsList {
+  height: 100%;
+}
+.skills {
+  width: auto;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.skillsImg,
+.fa-users,
+.fa-random,
+.fa-briefcase,
+.fa-cogs,
+.fa-compass {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+}
+.fa-compass {
+  font-size: 27px;
+}
+.skillsTitre h5 {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #3c4043;
+  letter-spacing: 0.1em;
+}
+
+.blocCapacite {
+  width: 30%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(137, 247, 254, 1) 0%,
+    rgba(102, 166, 255, 1) 90%
+  );
+  border-radius: 15px;
+}
+.capaciteList {
+  width: auto;
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.capacite {
+  width: 100%;
+  height: auto;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #3c4043;
+  justify-content: flex-start;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+.noHover {
+  pointer-events: none;
+}
+
+.btnInfosPerso {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding-right: 15px;
+  padding-left: 30px;
+}
+.btnBloc {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
+}
+.btnCv {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 50px;
+  position: relative;
+}
+.fa-download {
+  margin-right: 15px;
+}
+.btnCv:hover {
+  animation: cvSlide 0.3s ease forwards;
+  border: none;
+}
+@keyframes cvSlide {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 250px;
+    border-radius: 25px;
+    background-color: orange;
+  }
+}
+.fa-download {
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 5px 0 0 0;
+}
+.btnCvTxt {
+  width: 180px;
+  position: absolute;
+  opacity: 1;
+  transition: all 0.3s ease;
+  height: auto;
+  padding: 15px;
+  text-align: start;
+  font-size: 16px;
+  padding-right: 50px;
+  border: 1px solid orange;
+  border-radius: 35px;
+}
+.btnCvTxt:hover {
+  color: white;
+}
+@media screen and (min-width: 375px) and (max-width: 1600px) {
+  /*****************************************animation bloc qualité et competences**********************/
+  .reveal-qualites {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  .reveal-competences {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  .reveal-visible-qualites {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 1.5s;
+  }
+  .reveal-visible-competences {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 1.5s;
+  }
+
+  /************************************************************************************************************/
+
+  .infosPerso {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  .blocUn {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .mesInfos,
+  .blocFo {
+    width: 95%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .mesInfos {
+    border-radius: 15px;
+  }
+  .blocCapacite {
+    width: 95%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    /*
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(137, 247, 254, 1) 0%,
+      rgba(102, 166, 255, 1) 90%
+    );
+    border-radius: 15px;
+    */
+  }
+  .mesInfosTitre {
+    width: 100%;
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+  h3 {
+    padding: 10px;
+    margin: 0;
+  }
+  .mesInfosBloc {
+    height: auto;
+  }
+  .list {
+    width: auto;
+  }
+  .mesInfosList {
+    padding: 0 10px;
+    width: 95%;
+  }
+  .softSkillsList,
+  .capaciteList {
+    padding: 0 10px;
+  }
+  .capaciteList {
+    width: 95%;
+  }
+  .blocSoftSkills {
+    width: 100%;
+    /*
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 209, 67, 1) 0%,
+      rgba(255, 145, 83, 1) 90%
+    );
+    border-radius: 15px;
+    */
+  }
+  .softSkillsTitre,
+  .capaciteTitre {
+    padding-bottom: 0;
+  }
+  .btnInfosPerso {
+    justify-content: center;
+    padding: 0;
+  }
+  .btnBloc {
+    justify-content: center;
+    padding: 0;
+  }
+  .blocCapaciteList {
+    height: auto;
+    width: 100%;
+  }
+  .capacite {
+    margin-bottom: 20px;
+  }
+  .btnInfosPerso {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .btnCv {
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+  }
+  .btnCvTxt {
+    background-color: orange;
+    text-align: center;
+  }
+  .btnCv:hover {
+    animation: none;
+  }
+}

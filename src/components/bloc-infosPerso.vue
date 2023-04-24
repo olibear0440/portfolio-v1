@@ -103,8 +103,7 @@
         </div>
       </div>
     </div>
-
-    <div class="btnInfosPerso">
+    <!--<div class="btnInfosPerso">
       <div class="btnBloc">
         <div class="btnCv">
           <a
@@ -118,7 +117,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 
